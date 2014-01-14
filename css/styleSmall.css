@@ -41,21 +41,9 @@ a{
 	margin: auto;
 	padding: auto;
 }
-/* rules main title in logo*/
-.logo #logo1 a{
-	font-size: 40px;
-	color: #00A8CB;	
-	text-shadow: 0px 2px 3px #555;
-}
-/* rules main title in logo*/
-.logo #logo2 a{
-	font-size: 10px;
-	color: #ccc;		
-}
 /* rules for logo IMAGE*/
 .logo img{
-	width: 150px;
-	height: 80px;
+	width: 100%;
 }
 /********RULES FOR NAVIGATION MENU********/
 /* rules for all UNORDERED lists*/
