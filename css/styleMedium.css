@@ -608,8 +608,12 @@ ul#navmenu li:hover .sub1{
     *display: inline;
 	background:transparent url('../images/facebook.png') center top no-repeat;
 }
+.facebook img{
+	width:100%;
+	display: none;
+}
 .facebook:hover{
-	background-image: url('../images/facebook2.png');
+	background-image: url('../images/facebook2.png');	
 }
 .youtube{
 	width: 48px;
@@ -618,8 +622,12 @@ ul#navmenu li:hover .sub1{
     *display: inline;
 	background:transparent url('../images/youtube.png') center top no-repeat;
 }
+.youtube img{
+	width:100%;
+	display: none;
+}
 .youtube:hover{
-	background-image: url('../images/youtube2.png');
+	background-image: url('../images/youtube2.png');	
 }
 .linkedin{
 	width: 48px;
@@ -628,8 +636,12 @@ ul#navmenu li:hover .sub1{
     *display: inline;
 	background:transparent url('../images/linkedin.png') center top no-repeat;
 }
+.linkedin img{
+	width:100%;
+	display: none;
+}
 .linkedin:hover{
-	background-image: url('../images/linkedin2.png');
+	background-image: url('../images/linkedin2.png');	
 }
 .twitter{
 	width: 48px;
@@ -638,10 +650,13 @@ ul#navmenu li:hover .sub1{
     *display: inline;
 	background:transparent url('../images/twitter.png') center top no-repeat;
 }
+.twitter img{
+	width:100%;
+	display: none;
+}
 .twitter:hover{
 	background-image: url('../images/twitter2.png');
 }
-
 /* Initial state (hidden or anything else) */
 .cbp-so-init .cbp-so-side {
 	opacity: 0;

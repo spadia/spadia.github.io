@@ -754,9 +754,8 @@ ul#navmenu li:hover .sub1{
 	width:100%;
 	display: none;
 }
-.facebook:hover img{
-	display: inline-block;
-    *display: inline;	
+.facebook:hover{
+	background-image: url('../images/facebook2.png');	
 }
 .youtube{
 	width: 48px;
@@ -769,9 +768,8 @@ ul#navmenu li:hover .sub1{
 	width:100%;
 	display: none;
 }
-.youtube:hover img{
-	display: inline-block;
-    *display: inline;	
+.youtube:hover{
+	background-image: url('../images/youtube2.png');	
 }
 .linkedin{
 	width: 48px;
@@ -784,9 +782,8 @@ ul#navmenu li:hover .sub1{
 	width:100%;
 	display: none;
 }
-.linkedin:hover img{
-	display: inline-block;
-    *display: inline;	
+.linkedin:hover{
+	background-image: url('../images/linkedin2.png');	
 }
 .twitter{
 	width: 48px;
@@ -799,9 +796,8 @@ ul#navmenu li:hover .sub1{
 	width:100%;
 	display: none;
 }
-.twitter:hover img{
-	display: inline-block;
-    *display: inline;	
+.twitter:hover{
+	background-image: url('../images/twitter2.png');
 }
 
 /* Initial state (hidden or anything else) */
