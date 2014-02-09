@@ -24,7 +24,8 @@ a{
 #tabmenu{
 	text-align:center;	
 	width: 100%;
-	background-color: rgba(3,3,3,0.9);
+	padding: 0;
+	background-color: rgb(3,3,3);
 	position: fixed;
 	z-index: 2;
 }
@@ -58,6 +59,7 @@ ul#navmenu li{
 /* rules for MAIN ANCHOR element*/
 ul#navmenu a{
 	font-family: 'Alegreya Sans', sans-serif;
+	/*font-family: 'Open Sans', sans-serif;*/
 	font-size: 17px;
 	text-decoration: none;
 	display: block;
@@ -129,12 +131,41 @@ ul#navmenu li:hover .sub1{
 #flags a span{
 	display:none;
 } 
-
+/***************dummy div to add padding********************/
+#paddingMenu{
+	height: 60px;
+	width: 100%;
+}
+/***************Main container********************/
+.mainContainer{
+	width: 100%;
+	margin: 0 auto;
+}
+/***************Main container with text********************/
+.mainContainer .mainText{
+	font-family: 'Open Sans', sans-serif;
+	color: #00a8cb;
+	position: absolute;
+	z-index: 1;
+}
+/************Main container with logo************/
+.mainContainer #logoHD{
+	position: absolute;
+	z-index: 1;
+	width: 20%;
+	margin-left: 40%;
+	margin-top: 200px;
+}
+/************Main container with image as background************/
+.mainContainer .backgd{
+	position: relative;
+	width: 100%;
+	z-index:0;
+}
 /***********RULES FOR FOOTER**************/
 /* rules for all content in footer */
 .footer{
 	margin: 0px auto;
-	margin-top: 30px;
 	padding-top: 40px;
 	width: 100%;
 	background-color: rgba(3,3,3,0.9);
