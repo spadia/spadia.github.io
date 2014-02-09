@@ -7,6 +7,10 @@ $("#hideAll").css("padding-top",Math.round(windowHeight/2)-Math.round(imgHeight/
 
 
 function style(){	
+	/*Style for logo in main container*/
+	var mainContainerHeightLogo = $("#mainContainerLogo").height();
+	var logoHeight = $("#logoHD").height();
+	$('#logoHD').css("margin-top",Math.round(mainContainerHeightLogo/2-logoHeight/2));
 	/*Style for containers*/
 	//alert("hola");
 	var mainContainerHeight1 = $("#mainContainer1").height();
