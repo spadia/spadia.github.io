@@ -31,14 +31,14 @@ email: eduardo.lopezarce@gmail.com
 		<script type="text/javascript" src="../../js/modernizr.custom.79639.js"></script> 
 		<script src="../../js/modernizr.custom.js"></script>
 		<script type="text/javascript">
-			$(document).ready(function() {
-				$("#menu").load("../html/menu.html");
-				$("#footer").load("../html/footer.html");
-			});
-		</script>	
+			document.getElementById("hideAll").style.display = "block";
+			window.onload = function() 
+  { document.getElementById("hideAll").style.display = "none"; }
+	 	</script> 
 	</head>
 	<!--========START BODY========-->
 	<body>
+		<div style="display: none" id="hideAll">&nbsp;</div>
 		<!--========LOGO, TOP MENU AND FLAGS========-->
 		<table id = "tabmenu" width="100%" align="center"><tr>
 			<!--========LOGO========-->
