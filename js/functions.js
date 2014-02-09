@@ -1,3 +1,5 @@
+/********JQuery*********/
+/*************Display div when images are not loaded*******************/
 document.getElementById("hideAll").style.display = "block";
 var windowHeight = $(window).height();
 var imgHeight = $("#imgLoad").height();
