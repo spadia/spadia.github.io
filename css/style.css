@@ -31,7 +31,7 @@ a{
    background-color: #030303;
    z-index: 99; /* Higher than anything else in the document */
 }
-#hideAll img{
+#hideAll #imgLoad{
 	width:20%;
 	margin: 0 auto;
 	position: relative;
