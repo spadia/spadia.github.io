@@ -13,10 +13,12 @@ email: eduardo.lopezarce@gmail.com
 }
 /* rules for body*/
 body{
+	font-family: 'Open Sans', sans-serif;
 	text-align:center;
 }
 /* rules for Anchor*/
 a{
+	font-family: 'Open Sans', sans-serif;
 	text-decoration: none;
 	outline:none;
 }
