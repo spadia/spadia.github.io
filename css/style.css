@@ -162,7 +162,7 @@ ul#navmenu li:hover .sub1{
 	position: absolute;
 	z-index: 1;
 }
-/************Main container with logo************/
+/*Main container with logo*/
 .mainContainer #logoHD{
 	position: absolute;
 	z-index: 1;
@@ -170,11 +170,23 @@ ul#navmenu li:hover .sub1{
 	margin-left: 40%;
 	margin-top: 200px;
 }
-/************Main container with image as background************/
+/*Main container with image as background*/
 .mainContainer .backgd{
 	position: relative;
 	width: 100%;
 	z-index:0;
+}
+/*rules for button*/
+.button{
+	position: absolute;
+	color: #fff;
+	margin-top: 20px;
+	padding: 15px 25px;
+	background-color: #00A8CB;
+	z-index: 1;
+}
+.button:hover{
+	background-color: #00b8db;
 }
 /***********RULES FOR FOOTER**************/
 /* rules for all content in footer */
