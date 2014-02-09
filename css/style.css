@@ -6,7 +6,7 @@ email: eduardo.lopezarce@gmail.com
 /********GENERAL RULES********/
 /* rules for all index*/
 *{
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	margin:0px auto;
 	padding: 0px;
 	font-family: Helvetica, arial, sans-serif;
@@ -63,7 +63,6 @@ a{
 /* rules for all UNORDERED lists*/
 ul#navmenu, ul.sub1{
 	list-style-type:none;
-	font-size: 14px;
 	/*outline: 1px solid red;*/
 }
 /* rules for MAIN LIST item*/
@@ -72,19 +71,18 @@ ul#navmenu li{
 	position: relative; /*very important step*/
 	float: right;
 	margin-right: 1%;
-	margin-bottom: -10px;
+	margin-bottom: -20px;
 }
 /* rules for MAIN ANCHOR element*/
 ul#navmenu a{
-	font-family: 'Alegreya Sans', sans-serif;
-	/*font-family: 'Open Sans', sans-serif;*/
-	font-size: 17px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
 	text-decoration: none;
 	display: block;
 	color: #ddd;/*#002F64;*/
 	text-align: center;		
 	margin: 20px 20px;
-	padding-bottom: 10px;
+	padding-bottom: 20px;
 }
 /* rules for ALL ANCHOR element -> MAIN LI hover*/
 ul#navmenu li:hover >a{
@@ -96,21 +94,27 @@ ul#navmenu ul.sub1{
 	display: none;
 	position: absolute;
 	z-index: 2;
-	width: 220%;
+	width: 200px;
 	left: auto;
 	right: auto;	
-	margin-left: -55%;
-	background-color: rgba(3,3,3,0.9);
-	-webkit-border-radius: 0px 15px 0px 15px;
-	-moz-border-radius: 0px 15px 0px 15px;
-	border-radius: 0px 15px 0px 15px;
+	margin-left: -50px;
+	background-color: #030303;
+}
+ul#navmenu ul.sub1:after{
+	content:'';
+	display:block;
+	position:absolute;
+	top:-20px;
+	left: 80px;
+	width:0;
+	height:0;
+	border-color: transparent transparent #030303 transparent; /*border color should be same as div div background color*/
+	border-style: solid;
+	border-width: 10px;
 }
 /* rules for SUB LIST item*/
 ul#navmenu .sub1 li{
 	width: 100%;
-	-webkit-border-radius: 0px 15px 0px 15px;
-	-moz-border-radius: 0px 15px 0px 15px;
-	border-radius: 0px 15px 0px 15px;
 	/**border: 1px solid green;*/
 }
 /* rules for SUB ANCHOR element*/
@@ -118,15 +122,6 @@ ul#navmenu .sub1 a{
 	color: #ddd;
 	width: 100%;
 	margin: 5px auto;
-	-webkit-border-radius: 0px 15px 0px 15px;
-	-moz-border-radius: 0px 15px 0px 15px;
-	border-radius: 0px 15px 0px 15px;
-}
-/* rules for SUB ANCHOR element -> SUB A and LI hover
-ul#navmenu .sub1 li:hover a:hover{
-	background-color: #FFF;
-	width: 100%;
-	box-shadow: 0 0 0 1px rgba(150,150,150,0.9) inset;
 }
 /* rules for ALL SUB elements -> MAIN LI hover*/
 ul#navmenu li:hover .sub1{
@@ -190,6 +185,7 @@ ul#navmenu li:hover .sub1{
 	background-color: rgba(3,3,3,0.9);
 	color: #FFF;
 	text-align: justify;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 }
 /* rules for heading in footer */
@@ -218,7 +214,8 @@ ul#navmenu li:hover .sub1{
 	height: 50px;
 	text-align: right;
 	padding-bottom: 10px;
-	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
 	background-color: rgba(3,3,3,0.9);
 	color: #FFF;
 }
