@@ -159,12 +159,20 @@ ul#navmenu li:hover .sub1{
 }
 /*Main container with text*/
 .mainContainer .mainText{
-	width: 50%;
-	margin-left: 49%;
-	color: #00a8cb;
 	position: absolute;
 	z-index: 1;
 	text-align: center;
+}
+.mainContainer #mainText1{
+	margin-left: 49%;	
+	width: 50%;
+}
+.mainContainer #mainText2{
+	margin-left: 33%;	
+	width: 33%;
+}
+.mainContainer #mainText3{
+	width: 50%;
 }
 .mainContainer .mainText .p1{
 	font-family: 'Open Sans', sans-serif;
@@ -176,7 +184,12 @@ ul#navmenu li:hover .sub1{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 	line-height: 200%;
+}
+.mainContainer #mainText1 .p2, #mainText3 .p2{
 	color: #ddd;
+}
+.mainContainer #mainText2 .p2{
+	color: #333;
 }
 /*Main container with logo*/
 .mainContainer #logoHD{
