@@ -149,17 +149,18 @@ ul#navmenu li:hover .sub1{
 #flags a span{
 	display:none;
 } 
-/***************dummy div to add padding********************/
+/***************Rules for main section********************/
+/*dummy div to add padding*/
 #paddingMenu{
 	height: 60px;
 	width: 100%;
 }
-/***************Main container********************/
+/*Main container*/
 .mainContainer{
 	width: 100%;
 	margin: 0 auto;
 }
-/***************Main container with text********************/
+/*Main container with text*/
 .mainContainer .mainText{
 	font-family: 'Open Sans', sans-serif;
 	color: #00a8cb;
@@ -221,230 +222,7 @@ ul#navmenu li:hover .sub1{
 	background-color: rgba(3,3,3,0.9);
 	color: #FFF;
 }
-/***********RULES FOR SCROLLER**************/
-.cbp-so-scroller {
-	font-family: 'Alegreya Sans', sans-serif;
-	margin: 0;
-	overflow: hidden;
-}
-
-.cbp-so-section {
-	margin: 0;
-	margin-top:95px; 
-}
-.cbp-so-side-left .text-scroller{
-	padding: 10px;
-	margin: 10px 0px;
-	-webkit-border-top-right-radius: 30px;
-	-webkit-border-bottom-right-radius: 30px;
-	-moz-border-radius-topright: 30px;
-	-moz-border-radius-bottomright: 30px;
-	border-top-right-radius: 30px;
-	border-bottom-right-radius: 30px;
-
-	background-color: rgba(3,3,3,0.9);
-}
-.cbp-so-side-right .text-scroller{
-	padding: 10px;
-	margin: 10px 0px;
-	-webkit-border-top-left-radius: 30px;
-	-webkit-border-bottom-left-radius: 30px;
-	-moz-border-radius-topleft: 30px;
-	-moz-border-radius-bottomleft: 30px;
-	border-top-left-radius: 30px;
-	border-bottom-left-radius: 30px;
-
-	background-color: rgba(3,3,3,0.9);
-}
-/* Text styling */
-.cbp-so-section h4 {
-	font-family: 'Alegreya Sans', sans-serif;
-	text-align: center;
-	font-size: 50px;
-	margin-left: 10px;
-	margin-right: 10px;
-	color: #00A8CB;
-}
-
-.cbp-so-section .cbp-so-side-left h5 {
-	font-family: 'Alegreya Sans', sans-serif;
-	font-weight: normal;
-	padding-left: 10px;
-	font-size: 22px;
-	color: #ddd;
-	margin: 10px auto; 
-	margin-left: 10px;
-	margin-right: 10px;
-	text-align: left;
-}
-.cbp-so-section .cbp-so-side-right h5 {
-	font-family: 'Alegreya Sans', sans-serif;
-	font-weight: normal;
-	padding-right: 10px;
-	font-size: 22px;
-	color: #ddd;
-	margin: 10px auto; 
-	margin-left: 10px;
-	margin-right: 10px;
-	text-align: right;
-}
-
-/* rules for left READ MORE BUTTON container*/
-.cbp-so-section .cbp-so-side-left h6{
-	padding-top: 10px;
-	margin-bottom: 30px;
-	margin-right: 30px;
-	color: #00A8CB;
-	/*outline: 1px solid red;*/
-}
-/* rules for right READ MORE BUTTON container*/
-.cbp-so-section .cbp-so-side-right h6{
-	padding-top: 10px;
-	margin-bottom: 30px;
-	margin-left: 30px;
-	color: #00A8CB;
-	/*outline: 1px solid red;*/
-}
-/* rules for READ MORE BUTTON */
-.cbp-so-section h6 a{
-	text-align: center;
-	height: 20px;
-	font-size: 13px;
-	width: 150px;
-	background-color: #00A8CB;
-	border-radius: 15px;
-	color: #fff;
-	text-decoration: none;
-	outline: none;
-	font-weight: bold;
-	padding: 10px;
-}
-/* rules for left READ MORE BUTTON on hover*/
-.cbp-so-section .cbp-so-side-left h6 a:hover{
-	background-color: #00B8DB;
-}
-/* rules for right READ MORE BUTTON on hover*/
-.cbp-so-section .cbp-so-side-right h6 a:hover{
-	background-color: #00B8DB;
-}
-
-/* Clear floats of children */
-.cbp-so-section:before,
-.cbp-so-section:after {
-	content: " ";
-	display: table;
-}
-
-.cbp-so-section:after {
-	clear: both;
-}
-
-/* Sides */
-.cbp-so-side {
-	width: 100%;
-	float: left;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-	-moz-transition: -moz-transform 0.5s, opacity 0.5s;
-	transition: transform 0.5s, opacity 0.5s;
-}
-/* Clear floats of children */
-.cbp-so-side:before,
-.cbp-so-side:after {
-	content: " ";
-	display: table;
-}
-
-.cbp-so-side:after {
-	clear: both;
-}
-
-.cbp-so-side-right {
-	text-align: left;
-}
-
-.cbp-so-side-left {
-	text-align: right;
-}
-
-.cbp-so-side-right img {
-	float: right;
-	width: 100%;
-}
-.cbp-so-side-left img {
-	float: left;
-	width: 100%;
-}
-
-.cbp-so-side-left .footer img {
-	float: right;
-	width: 100%;
-}
-.cbp-so-side-right p img {
-	float: none;
-	width: 48px;
-}
-
-/****************************************/
-/***********CONTENT IN SECTIONS**********/
-/****************************************/
-/* container */
-.section-content{
-	width: 80%;
-	float: center;
-	text-align:center;
-	margin: 10px auto;
-	padding: 50px;
-	-webkit-border-radius: 30px;
-	-moz-border-radius: 30px;
-	border-radius: 30px;
-
-	background-color: rgba(3,3,3,0.9);
-	-moz-box-shadow:    inset    0px   0px 15px  8px #696868,
-                        inset    0px   0px 15px  8px #696868;
-    -webkit-box-shadow: inset    0px   0px 15px  8px #696868,
-                        inset    0px   0px 15px  8px #696868;
-     box-shadow:        inset    0px   0px 15px  8px #696868,
-                        inset    0px   0px 15px  8px #696868;
-}
-/* Text inside container*/
-.cbp-so-side-left .section-content h5{
-	padding-right: 10px;
-	font-size: 22px;
-	color: #ddd;
-	margin: 10px auto; 
-	margin-left: 10px;
-	margin-right: 10px;
-	text-align: left;
-}
-.cbp-so-side-right .section-content h5{
-	padding-right: 10px;
-	font-size: 22px;
-	color: #ddd;
-	margin: 10px auto; 
-	margin-left: 10px;
-	margin-right: 10px;
-	text-align: left;
-}
-.section-content ul{
-	text-align: left;
-}
-.section-content li{	
-	font-family: 'Alegreya Sans', sans-serif;
-	font-weight: normal;
-}
-.section-content h5 a{
-	text-decoration: none;
-	color: #00A8CB;
-}
-.section-content h5 a:hover{
-	text-decoration:underline;
-}
-/****************************************/
 /*************SOCIAL MEDIA***************/
-/****************************************/
 .facebook{
 	width: 48px;
 	height:48px;
@@ -500,31 +278,4 @@ ul#navmenu li:hover .sub1{
 }
 .twitter:hover{
 	background-image: url('../images/twitter2.png');
-}
-
-/* Initial state (hidden or anything else) */
-.cbp-so-init .cbp-so-side {
-	opacity: 0;
-}
-
-.cbp-so-init .cbp-so-side-left {
-	-webkit-transform: translateX(-80px);
-	-moz-transform: translateX(-80px);
-	transform: translateX(-80px);
-}
-
-.cbp-so-init .cbp-so-side-right {
-	-webkit-transform: translateX(80px);
-	-moz-transform: translateX(80px);
-	transform: translateX(80px);
-}
-
-/* Animated state */
-/* add you final states (transition) or your effects (animations) for each side */
-.cbp-so-section.cbp-so-animate .cbp-so-side-left,
-.cbp-so-section.cbp-so-animate .cbp-so-side-right {
-	-webkit-transform: translateX(0px);
-	-moz-transform: translateX(0px);
-	transform: translateX(0px);
-	opacity: 1;
 }
