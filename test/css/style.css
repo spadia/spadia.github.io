@@ -159,10 +159,24 @@ ul#navmenu li:hover .sub1{
 }
 /*Main container with text*/
 .mainContainer .mainText{
-	font-family: 'Open Sans', sans-serif;
+	width: 50%;
+	margin-left: 49%;
 	color: #00a8cb;
 	position: absolute;
 	z-index: 1;
+	text-align: center;
+}
+.mainContainer .mainText .p1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 40px;
+	color: #00b8db;
+	margin-bottom: 10px;
+}
+.mainContainer .mainText .p2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	line-height: 200%;
+	color: #ddd;
 }
 /*Main container with logo*/
 .mainContainer #logoHD{
@@ -180,9 +194,10 @@ ul#navmenu li:hover .sub1{
 }
 /*rules for button*/
 .button{
-	position: absolute;
+	font-family: 'Open Sans', sans-serif;
+	position: relative;
 	color: #fff;
-	margin-top: 20px;
+	margin: 20px 0px;
 	padding: 15px 25px;
 	background-color: #00A8CB;
 	z-index: 1;
