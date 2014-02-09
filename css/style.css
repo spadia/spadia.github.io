@@ -184,7 +184,7 @@ ul#navmenu li:hover .sub1{
 	width: 100%;
 	background-color: rgba(3,3,3,0.9);
 	color: #FFF;
-	text-align: justify;
+	text-align: left;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 }
