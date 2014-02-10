@@ -158,15 +158,15 @@ ul#navmenu li:hover .sub1{
 	text-align: center;
 }
 .mainContainer #mainText1, #sectionText1, #sectionText3{
-	margin-left: 50%;	
-	width: 45%;
+	margin-left: 45%;	
+	width: 50%;
 }
 .mainContainer #mainText2{
 	margin-left: 33%;	
 	width: 33%;
 }
 .mainContainer #mainText3,  #sectionText2{
-	width: 45%;
+	width: 50%;
 	margin-left: 5%;
 }
 .mainContainer .mainText .p1{
@@ -374,15 +374,15 @@ ul#navmenu li:hover .sub1{
 		width: 630px;
 	}
 	.mainContainer #mainText1, #sectionText1, #sectionText3{
-		margin-left: 315px;	
-		width: 300px;
+		margin-left: 300px;	
+		width: 315px;
 	}
 	.mainContainer #mainText2{
 		margin-left: 210px;	
 		width: 210px;
 	}
 	.mainContainer #mainText3, #sectionText2{
-		width: 300px;
+		width: 315px;
 		margin-left: 15px;
 	}
 	/*Main container with logo*/
