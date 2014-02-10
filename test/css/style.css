@@ -374,15 +374,16 @@ ul#navmenu li:hover .sub1{
 		width: 630px;
 	}
 	.mainContainer #mainText1, #sectionText1, #sectionText3{
-		margin-left: 314px;	
-		width: 315px;
+		margin-left: 315px;	
+		width: 300px;
 	}
 	.mainContainer #mainText2{
 		margin-left: 210px;	
 		width: 210px;
 	}
 	.mainContainer #mainText3, #sectionText2{
-		width: 315px;
+		width: 300px;
+		margin-left: 15px;
 	}
 	/*Main container with logo*/
 	.mainContainer #logoHD{
