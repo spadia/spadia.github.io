@@ -158,15 +158,16 @@ ul#navmenu li:hover .sub1{
 	text-align: center;
 }
 .mainContainer #mainText1, #sectionText1, #sectionText3{
-	margin-left: 49%;	
-	width: 50%;
+	margin-left: 50%;	
+	width: 45%;
 }
 .mainContainer #mainText2{
 	margin-left: 33%;	
 	width: 33%;
 }
 .mainContainer #mainText3,  #sectionText2{
-	width: 50%;
+	width: 45%;
+	margin-left: 5%;
 }
 .mainContainer .mainText .p1{
 	font-family: 'Open Sans', sans-serif;
