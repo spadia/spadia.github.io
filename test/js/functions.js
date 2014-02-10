@@ -1,6 +1,5 @@
 /********JQuery*********/
 /*************Display div when images are not loaded*******************/
-//alert("adios");
 
 function style(){	
 	/*Style for logo in main container*/
