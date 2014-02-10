@@ -157,7 +157,7 @@ ul#navmenu li:hover .sub1{
 	z-index: 1;
 	text-align: center;
 }
-.mainContainer #mainText1{
+.mainContainer #mainText1, #sectionText1, #sectionText3{
 	margin-left: 49%;	
 	width: 50%;
 }
@@ -165,7 +165,7 @@ ul#navmenu li:hover .sub1{
 	margin-left: 33%;	
 	width: 33%;
 }
-.mainContainer #mainText3{
+.mainContainer #mainText3,  #sectionText2{
 	width: 50%;
 }
 .mainContainer .mainText .p1{
@@ -183,6 +183,9 @@ ul#navmenu li:hover .sub1{
 	color: #ddd;
 }
 .mainContainer #mainText2 .p2{
+	color: #333;
+}
+.mainContainer #sectionText1 .p2, #sectionText2 .p2, #sectionText3 .p2{
 	color: #333;
 }
 /*Main container with logo*/
@@ -369,7 +372,7 @@ ul#navmenu li:hover .sub1{
 	.mainContainer{
 		width: 630px;
 	}
-	.mainContainer #mainText1{
+	.mainContainer #mainText1, #sectionText1, #sectionText3{
 		margin-left: 314px;	
 		width: 315px;
 	}
@@ -377,7 +380,7 @@ ul#navmenu li:hover .sub1{
 		margin-left: 210px;	
 		width: 210px;
 	}
-	.mainContainer #mainText3{
+	.mainContainer #mainText3, #sectionText2{
 		width: 315px;
 	}
 	/*Main container with logo*/

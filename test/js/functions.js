@@ -3,22 +3,54 @@
 
 function style(){	
 	/*Style for logo in main container*/
-	var mainContainerHeightLogo = $("#mainContainerLogo").height();
-	var logoHeight = $("#logoHD").height();
-	$('#logoHD').css("margin-top",Math.round(mainContainerHeightLogo/2-logoHeight/2));
-	/*Style for containers*/
+	var containerHeight = $("#mainContainerLogo").height();
+	var itemHeight = $("#logoHD").height();
+	$('#logoHD').css("margin-top",Math.round(containerHeight/2-itemHeight/2));
+	/*Style for containers in home page*/
 	//First container
-	var mainContainerHeight1 = $("#mainContainer1").height();
-	var mainTextHeight1 = $("#mainText1").height();
-	$('#mainText1').css("margin-top",Math.round(mainContainerHeight1/2-mainTextHeight1/2));
+	containerHeight = $("#mainContainer1").height();
+	itemHeight = $("#mainText1").height();
+	$('#mainText1').css("margin-top",Math.round(containerHeight/2-itemHeight/2));
 	//Second container
-	var mainContainerHeight2 = $("#mainContainer2").height();
-	var mainTextHeight2 = $("#mainText2").height();
-	$('#mainText2').css("margin-top",Math.round(mainContainerHeight2/2-mainTextHeight2/2));
+	containerHeight = $("#mainContainer2").height();
+	itemHeight = $("#mainText2").height();
+	$('#mainText2').css("margin-top",Math.round(containerHeight/2-itemHeight/2));
 	//Third container
-	var mainContainerHeight3 = $("#mainContainer3").height();
-	var mainTextHeight3 = $("#mainText3").height();
-	$('#mainText3').css("margin-top",Math.round(mainContainerHeight3/2-mainTextHeight3/2));
+	containerHeight = $("#mainContainer3").height();
+	itemHeight = $("#mainText3").height();
+	$('#mainText3').css("margin-top",Math.round(containerHeight/2-itemHeight/2));
+	/*Style for containers in sections*/
+	//First container
+	containerHeight = $("#sectionContainer1").height();
+	itemHeight = $("#sectionText1").height();
+	$('#sectionText1').css("margin-top",Math.round(containerHeight/2-itemHeight/2));
+	var tempDiff = containerHeight - itemHeight;
+	if (tempDiff < 0){
+		tempDiff = Math.round(Math.abs(tempDiff));
+		$("#sectionContainer1").css("margin-top",tempDiff);
+		$("#sectionContainer1").css("margin-bottom",tempDiff);
+	};
+	//Second container
+	containerHeight = $("#sectionContainer2").height();
+	itemHeight = $("#sectionText2").height();
+	$('#sectionText2').css("margin-top",Math.round(containerHeight/2-itemHeight/2));
+	var tempDiff = containerHeight - itemHeight;
+	if (tempDiff < 0){
+		tempDiff = Math.round(Math.abs(tempDiff));
+		$("#sectionContainer2").css("margin-top",tempDiff);
+		$("#sectionContainer2").css("margin-bottom",tempDiff);
+	};
+	//Third container
+	containerHeight = $("#sectionContainer3").height();
+	itemHeight = $("#sectionText3").height();
+	$('#sectionText3').css("margin-top",Math.round(containerHeight/2-itemHeight/2));
+	var tempDiff = containerHeight - itemHeight;
+	if (tempDiff < 0){
+		tempDiff = Math.round(Math.abs(tempDiff));
+		$("#sectionContainer3").css("margin-top",tempDiff);
+		$("#sectionContainer3").css("margin-bottom",tempDiff);
+	};
+	
 }
 
 $(window).load(function(){  
