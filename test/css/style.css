@@ -133,12 +133,6 @@ ul#navmenu li:hover .sub1{
 #flags{
 	margin: auto;
 	padding-top: 10px;	
-	/*background-repeat:no-repeat;
-	position:absolute;
-	padding-bottom: 50px;
-	/*top: 5px;
-	right: 5px;
-	background-position:0 top right;*/
 }
 #flags img{
 	margin: 0 2px;
@@ -316,4 +310,102 @@ ul#navmenu li:hover .sub1{
 }
 .twitter:hover{
 	background-image: url('../images/twitter2.png');
+}
+
+@media screen and (max-width: 875px) and (min-width: 811px){
+	#flags{
+		margin: 0px;
+		padding-top: 10px;	
+	}
+	#flags img{
+		margin: 0px;
+	}
+}
+@media screen and (max-width: 811px) and (min-width: 0px){
+	#flags{
+		margin: 0px;
+		margin-top: -28px;
+		padding:0px;	
+	}
+	#flags img{
+		margin: 0px;
+		padding: 0px;
+		display: block;
+		margin-bottom: 2px;
+	}
+	.mainContainer .mainText .p1{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 35px;
+		color: #00b8db;
+		margin-bottom: 10px;
+	}
+	.mainContainer .mainText .p2{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 15px;
+		line-height: 200%;
+	}
+}
+@media screen and (max-width: 630px) and (min-width: 0px){
+	/********RULES FOR TABLE WITH MENU CONTENT********/
+	#tabmenu{
+		width: 630px;
+		position: relative;
+	}
+	/* rules for MAIN LIST item*/
+	ul#navmenu li{
+		/*border: 1px solid red;*/
+		position: relative; /*very important step*/
+		float: right;
+		margin-right: 1%;
+		margin-bottom: -20px;
+	}
+	/***************Rules for main section********************/
+	/*dummy div to add padding*/
+	#paddingMenu{
+		height: 0px;
+		width: 630px;
+	}
+	/*Main container*/
+	.mainContainer{
+		width: 630px;
+	}
+	.mainContainer #mainText1{
+		margin-left: 314px;	
+		width: 315px;
+	}
+	.mainContainer #mainText2{
+		margin-left: 210px;	
+		width: 210px;
+	}
+	.mainContainer #mainText3{
+		width: 315px;
+	}
+	/*Main container with logo*/
+	.mainContainer #logoHD{
+		position: absolute;
+		z-index: 1;
+		width: 126px;
+		margin-left: 252px;
+	}
+	/*Main container with image as background*/
+	.mainContainer .backgd{
+		width: 630px;
+	}
+	/***********RULES FOR FOOTER**************/
+	/* rules for all content in footer */
+	.footer{
+		width: 630px;
+	}
+	/* rules for heading in footer */
+	.footer .title{
+		margin-left: 80px;
+	}
+	/* rules for subheading in footer */
+	.footer p{
+		margin-left: 80px;
+	}
+	/****************RULES FOR SUBFOOTER************/
+	.subfooter{
+		width: 630px;
+	}
 }

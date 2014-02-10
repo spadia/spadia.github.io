@@ -28,7 +28,6 @@ function style(){
 
 $(window).load(function(){  
 	document.getElementById("hideAll").style.display = "none";
-	//alert("adios");
 	$(document).ready(style);
 	$(window).ready(style);
 	$(window).resize(style);
