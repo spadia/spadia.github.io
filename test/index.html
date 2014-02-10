@@ -34,6 +34,13 @@ email: eduardo.lopezarce@gmail.com
 			<img id = "imgLoad" src="images/logo.png"><br/><br/>
 			<img id = "loader"	src = "images/ajax-loader.gif">
 		</div>
+		<script>
+			alert("hola");
+			document.getElementById("hideAll").style.display = "block";
+			var windowHeight = $(window).height();
+			var imgHeight = $("#imgLoad").height();
+			$("#hideAll").css("padding-top",Math.round(windowHeight/2)-Math.round(imgHeight/2));
+		</script>
 		<!--========LOGO, TOP MENU AND FLAGS========-->
 		<table id = "tabmenu" align="center"><tr>
 			<!--========LOGO========-->

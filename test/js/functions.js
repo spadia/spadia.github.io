@@ -1,10 +1,6 @@
 /********JQuery*********/
 /*************Display div when images are not loaded*******************/
-document.getElementById("hideAll").style.display = "block";
-var windowHeight = $(window).height();
-var imgHeight = $("#imgLoad").height();
-$("#hideAll").css("padding-top",Math.round(windowHeight/2)-Math.round(imgHeight/2));
-
+//alert("adios");
 
 function style(){	
 	/*Style for logo in main container*/
