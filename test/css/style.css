@@ -218,7 +218,11 @@ ul#navmenu li:hover .sub1{
 	background-color: #00b8db;
 }
 #target{
+	color: #030303;
 	cursor: pointer;
+	background-color: transparent;
+	text-align: left;
+	float: left;
 }
 #target2{
 	font-family: 'Open Sans', sans-serif;
