@@ -209,6 +209,7 @@ ul#navmenu li:hover .sub1{
 	position: relative;
 	color: #fff;
 	margin: 20px 0px;
+	line-height: 400%;
 	padding: 15px 25px;
 	background-color: #00A8CB;
 	z-index: 1;
@@ -353,6 +354,7 @@ ul#navmenu li:hover .sub1{
 		font-family: 'Open Sans', sans-serif;
 		font-size: 15px;
 		padding: 10px 20px;
+		line-height: 200%;
 	}
 }
 @media screen and (max-width: 630px) and (min-width: 0px){
