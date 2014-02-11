@@ -30,16 +30,15 @@ email: eduardo.lopezarce@gmail.com
 	</head>
 	<!--========START BODY========-->
 	<body>
-		<div style="display: none" id="hideAll">
+		<div id="hideAll">
 			<img id = "imgLoad" src="images/logo.png"><br/><br/>
 			<img id = "loader"	src = "images/ajax-loader.gif">
 		</div>
-		<span id ="closeIcon"><img src ="images/close.png" width ="32px"/></span>
-		<div id = "specContainer">
-			
+		<span style="display: none; opacity: 0;" id ="closeIcon"><img src ="images/close.png" width ="32px"/></span>
+		<div style="display: none; opacity: 0;" id = "specContainer">
+			<img id ="imgSpec" src = "images/ulnar.JPG" width = "90%"/>
 		</div>
 		<script>
-			document.getElementById("closeIcon").style.display = "none";
 			document.getElementById("hideAll").style.display = "block";
 			var windowHeight = $(window).height();
 			var imgHeight = $("#imgLoad").height();

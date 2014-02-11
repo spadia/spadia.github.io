@@ -50,45 +50,53 @@ function style(){
 		$("#sectionContainer3").css("margin-top",tempDiff);
 		$("#sectionContainer3").css("margin-bottom",tempDiff);
 	};
-	
 }
 
 $(window).load(function(){  
 	$(document).ready(style);
 	$(window).ready(style);
 	$(window).resize(style);
-	$("#hideAll").fadeTo("medium",0, function(){
+	$("#hideAll").fadeTo(400,0, function(){
 		document.getElementById("hideAll").style.display = "none";	
 	});	
 });
 
 $( "#targetSpec" ).click(function() {
-	document.getElementById("hideAll").style.display = "block";
+	document.getElementById("specContainer").style.display = "block";
   	document.getElementById("closeIcon").style.display = "block";
-	$("#hideAll").fadeTo("medium",1);
-	$("#closeIcon").fadeTo("medium",1);
-	var windowHeight = $(window).height();
-	var imgHeight = $("#imgLoad").height();
-	$("#hideAll").css("padding-top",Math.round(windowHeight/2)-Math.round(imgHeight/2));
+	$("#specContainer").fadeTo(400,1);
+	$("#closeIcon").fadeTo(400,1);
+	/*Style for container with specifications*/
+	var containerHeight = $("#specContainer").height();
+	var itemHeight = $("#imgSpec").height();
+	var tempDiff = Math.round(containerHeight/2-itemHeight/2);
+	if (tempDiff > 0){
+		$('#imgSpec').css("margin-top",tempDiff);
+	}else{
+		$('#imgSpec').css("height",itemHeight+2*tempDiff-itemHeight*.05);
+		$('#imgSpec').css("margin-top",itemHeight*.025);
+		var itemWidth = $("#imgSpec").width();
+		$('#imgSpec').css("width",itemWidth+2*tempDiff-itemHeight*.05);
+	}
 });
 
 
 $( "#closeIcon").click(function() {	
-	$("#closeIcon").fadeTo("medium",0, function(){
+	$("#closeIcon").fadeTo(400,0, function(){
 		document.getElementById("closeIcon").style.display = "none";		
 	});
-	$("#hideAll").fadeTo("medium",0, function(){
-		document.getElementById("hideAll").style.display = "none";		
+	$("#specContainer").fadeTo(400,0, function(){
+		document.getElementById("specContainer").style.display = "none";		
 	});	
 });
 
 $(document).keyup(function(e) {
 	if (e.keyCode == 27){ 
-		$("#closeIcon").fadeTo("medium",0, function(){
+		$("#closeIcon").fadeTo(400,0, function(){
 			document.getElementById("closeIcon").style.display = "none";		
 		});
-		$("#hideAll").fadeTo("medium",0, function(){
-			document.getElementById("hideAll").style.display = "none";		
+		$("#specContainer").fadeTo(400,0, function(){
+			document.getElementById("specContainer").style.display = "none";		
 		});	
 	}
 });
