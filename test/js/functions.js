@@ -59,3 +59,17 @@ $(window).load(function(){
 	$(window).ready(style);
 	$(window).resize(style);
 });
+
+$( "#target" ).click(function() {
+  	document.getElementById("target2").style.display = "block";
+	document.getElementById("hideAll").style.display = "block";
+	var windowHeight = $(window).height();
+	var imgHeight = $("#imgLoad").height();
+	$("#hideAll").css("padding-top",Math.round(windowHeight/2)-Math.round(imgHeight/2));
+});
+
+
+$( "#target2" ).click(function() {
+	document.getElementById("target2").style.display = "none";
+	document.getElementById("hideAll").style.display = "none";	
+});
