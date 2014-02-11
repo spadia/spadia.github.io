@@ -62,20 +62,20 @@ $(window).load(function(){
 	});	
 });
 
-$( "#target" ).click(function() {
+$( "#targetSpec" ).click(function() {
 	document.getElementById("hideAll").style.display = "block";
-  	document.getElementById("target2").style.display = "block";
+  	document.getElementById("closeIcon").style.display = "block";
 	$("#hideAll").fadeTo("medium",1);
-	$("#target2").fadeTo("medium",1);
+	$("#closeIcon").fadeTo("medium",1);
 	var windowHeight = $(window).height();
 	var imgHeight = $("#imgLoad").height();
 	$("#hideAll").css("padding-top",Math.round(windowHeight/2)-Math.round(imgHeight/2));
 });
 
 
-$( "#target2").click(function() {	
-	$("#target2").fadeTo("medium",0, function(){
-		document.getElementById("target2").style.display = "none";		
+$( "#closeIcon").click(function() {	
+	$("#closeIcon").fadeTo("medium",0, function(){
+		document.getElementById("closeIcon").style.display = "none";		
 	});
 	$("#hideAll").fadeTo("medium",0, function(){
 		document.getElementById("hideAll").style.display = "none";		
@@ -84,8 +84,8 @@ $( "#target2").click(function() {
 
 $(document).keyup(function(e) {
 	if (e.keyCode == 27){ 
-		$("#target2").fadeTo("medium",0, function(){
-			document.getElementById("target2").style.display = "none";		
+		$("#closeIcon").fadeTo("medium",0, function(){
+			document.getElementById("closeIcon").style.display = "none";		
 		});
 		$("#hideAll").fadeTo("medium",0, function(){
 			document.getElementById("hideAll").style.display = "none";		

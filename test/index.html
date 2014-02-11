@@ -34,9 +34,12 @@ email: eduardo.lopezarce@gmail.com
 			<img id = "imgLoad" src="images/logo.png"><br/><br/>
 			<img id = "loader"	src = "images/ajax-loader.gif">
 		</div>
-		<span id ="target2"><img src ="images/close.png" width ="32px"/></span>
+		<span id ="closeIcon"><img src ="images/close.png" width ="32px"/></span>
+		<div id = "specContainer">
+			
+		</div>
 		<script>
-			document.getElementById("target2").style.display = "none";
+			document.getElementById("closeIcon").style.display = "none";
 			document.getElementById("hideAll").style.display = "block";
 			var windowHeight = $(window).height();
 			var imgHeight = $("#imgLoad").height();
@@ -91,11 +94,10 @@ email: eduardo.lopezarce@gmail.com
 			<div class ="mainText" id ="mainText2">
 				<div class ="p1">Ulnar</div>
 				<div class ="p2"></div>				
-				<span id = "target">Click hand to read specifications</span>
+				<span id = "targetSpec">Click hand to read specifications</span>
 			</div>
 			<img class="backgd" src = "images/SpadiaRenderHand.JPG"/>
 		</div>
-
 		<div class = "mainContainer" id ="mainContainer3">
 			<div class ="mainText" id ="mainText3">
 				<div class ="p1">Insight</div>
