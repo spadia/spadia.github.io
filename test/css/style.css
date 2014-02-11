@@ -205,6 +205,7 @@ ul#navmenu li:hover .sub1{
 /*rules for button*/
 .button{
 	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
 	position: relative;
 	color: #fff;
 	margin: 20px 0px;
@@ -347,6 +348,11 @@ ul#navmenu li:hover .sub1{
 		font-family: 'Open Sans', sans-serif;
 		font-size: 15px;
 		line-height: 200%;
+	}
+	.button{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 15px;
+		padding: 10px 20px;
 	}
 }
 @media screen and (max-width: 630px) and (min-width: 0px){
