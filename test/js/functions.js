@@ -50,6 +50,11 @@ function style(){
 		$("#sectionContainer3").css("margin-top",tempDiff);
 		$("#sectionContainer3").css("margin-bottom",tempDiff);
 	};
+	//Video container
+	var containerWidth = $("#videoContainer1").width();
+	$('#videoContainer1').css("height",containerWidth*3/4);
+	var containerWidth = $("#videoContainer2").width();
+	$('#videoContainer2').css("height",containerWidth*3/4);
 }
 
 $(window).load(function(){  
