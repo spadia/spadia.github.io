@@ -233,7 +233,7 @@ ul#navmenu li:hover .sub1{
 #targetSpec{
 	color: #030303;
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 	left: 0px;
 	cursor: pointer;
 	background-color: transparent;
@@ -246,7 +246,15 @@ ul#navmenu li:hover .sub1{
 #backgdSpec{
 	position: absolute;
 	display: none;
+	opacity: 0;
 	z-index: 0;
+}
+/*Rules for third image to use on click for specification subsection*/
+#backgdSpecClick{
+	position: absolute;
+	display: none;
+	opacity: 0;
+	z-index: 0;	
 }
 /*Rules for specification subsection*/
 #specContainer{

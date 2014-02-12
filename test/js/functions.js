@@ -82,22 +82,25 @@ $(window).load(function(){
 });
 
 $( "#targetSpec" ).click(function() {
-	document.getElementById("specContainer").style.display = "block";
-  	document.getElementById("closeIcon").style.display = "block";
-	$("#specContainer").fadeTo(400,1);
-	$("#closeIcon").fadeTo(400,1);
-	/*Style for container with specifications*/
-	var containerHeight = $("#specContainer").height();
-	var itemHeight = $("#imgSpec").height();
-	var tempDiff = Math.round(containerHeight/2-itemHeight/2);
-	if (tempDiff > 0){
-		$('#imgSpec').css("margin-top",tempDiff);
-	}else{
-		$('#imgSpec').css("height",itemHeight+2*tempDiff-itemHeight*.05);
-		$('#imgSpec').css("margin-top",itemHeight*.025);
-		var itemWidth = $("#imgSpec").width();
-		$('#imgSpec').css("width",itemWidth+2*tempDiff-itemHeight*.05);
-	}
+  	document.getElementById("backgdSpecClick").style.display = "block";
+	$("#backgdSpecClick").fadeTo(800,1,function(){
+		document.getElementById("specContainer").style.display = "block";
+	  	document.getElementById("closeIcon").style.display = "block";
+		$("#specContainer").fadeTo(400,1);
+		$("#closeIcon").fadeTo(400,1);
+		/*Style for container with specifications*/
+		var containerHeight = $("#specContainer").height();
+		var itemHeight = $("#imgSpec").height();
+		var tempDiff = Math.round(containerHeight/2-itemHeight/2);
+		if (tempDiff > 0){
+			$('#imgSpec').css("margin-top",tempDiff);
+		}else{
+			$('#imgSpec').css("height",itemHeight+2*tempDiff-itemHeight*.05);
+			$('#imgSpec').css("margin-top",itemHeight*.025);
+			var itemWidth = $("#imgSpec").width();
+			$('#imgSpec').css("width",itemWidth+2*tempDiff-itemHeight*.05);
+		}		
+	});
 });
 
 
@@ -108,6 +111,9 @@ $( "#closeIcon").click(function() {
 	$("#specContainer").fadeTo(400,0, function(){
 		document.getElementById("specContainer").style.display = "none";		
 	});	
+	$("#backgdSpecClick").fadeTo(400,0, function(){
+		document.getElementById("specContainer").style.display = "none";		
+	});
 });
 
 $(document).keyup(function(e) {
@@ -118,13 +124,20 @@ $(document).keyup(function(e) {
 		$("#specContainer").fadeTo(400,0, function(){
 			document.getElementById("specContainer").style.display = "none";		
 		});	
+		$("#backgdSpecClick").fadeTo(400,0, function(){
+			document.getElementById("specContainer").style.display = "none";		
+		});
 	}
 });
 
+var fadeElement  = $("#backgdSpec");	
 $("#targetSpec").mouseover(function(){
 	document.getElementById("backgdSpec").style.display = "block";
+	fadeElement.fadeTo(400,1);
 });
 
 $("#targetSpec").mouseout(function(){
-	document.getElementById("backgdSpec").style.display = "none";
+	fadeElement.stop().fadeTo(200,0,function(){
+		document.getElementById("backgdSpec").style.display = "none";		
+	});
 });
