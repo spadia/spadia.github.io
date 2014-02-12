@@ -55,6 +55,21 @@ function style(){
 	$('#videoContainer1').css("height",containerWidth*3/4);
 	var containerWidth = $("#videoContainer2").width();
 	$('#videoContainer2').css("height",containerWidth*3/4);
+	/*Style for slider*/
+	//Main container
+	containerWidth = $('.slides').width();
+	$('.slides').css("height",containerWidth*9/16);
+	//height for prev and next buttons
+	containerHeight = $('#prev1').height();
+	tempDiff = Math.round((containerWidth*9/16 - containerHeight)/2);
+	$('#prev1').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
+	$('#next1').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
+	$('#prev2').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
+	$('#next2').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
+	$('#prev3').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
+	$('#next3').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
+	$('#prev4').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
+	$('#next4').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
 }
 
 $(window).load(function(){  

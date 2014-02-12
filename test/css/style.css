@@ -2,7 +2,8 @@
 Author: Eduardo López Arce Vivas
 email: eduardo.lopezarce@gmail.com
 ***********************************/
-
+/*IMPORT GOOGLE FONTS*/
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
 /********GENERAL RULES********/
 /* rules for all index*/
 *{
@@ -51,7 +52,7 @@ a{
 	padding: 0;
 	background-color: rgb(3,3,3);
 	position: fixed;
-	z-index: 2;
+	z-index: 3;
 }
 /********RULES FOR LOGO********/
 /* rules for logo*/
@@ -75,6 +76,7 @@ ul#navmenu, ul.sub1{
 ul#navmenu li{
 	/*border: 1px solid red;*/
 	position: relative; /*very important step*/
+	z-index: 3;
 	float: right;
 	margin-right: 1%;
 	margin-bottom: -20px;
@@ -101,7 +103,7 @@ ul#navmenu ul.sub1{
 	margin-top: -5px;
 	display: none;
 	position: absolute;
-	z-index: 2;
+	z-index: 3;
 	width: 200px;
 	left: auto;
 	right: auto;	
@@ -151,7 +153,9 @@ ul#navmenu li:hover .sub1{
 /***************Rules for main section********************/
 /*dummy div to add padding*/
 #paddingMenu{
-	height: 60px;
+	height: 63px;
+	position: relative;
+	z-index:2;
 	width: 100%;
 }
 /*Main container*/
@@ -269,6 +273,94 @@ ul#navmenu li:hover .sub1{
 	margin-top: 2%;
 	margin-right: 2%;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**********RULES FOR SLIDER IN SECTION MUSCLE**************/
+.slides {
+    padding: 0;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+.slides input { 
+	display: none; 
+}
+.slide-container { 
+	display: block; 
+}
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .5s ease-in-out;
+}
+.slide img {
+    width: 100%;
+}
+.nav label {
+    width: 60px;
+    display: none;
+    position: absolute;
+	opacity: 0.2;
+    z-index: 1;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 100px;
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .2);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+.nav label:hover { 
+	opacity: 1; 
+}
+.nav .next { 
+	right: 0; 
+}
+input:checked + .slide-container  .slide {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+input:checked + .slide-container .nav label { 
+	display: block; 
+}
+
+
+
+
+
+
+
+
+
+
+
 /***********RULES FOR FOOTER**************/
 /* rules for all content in footer */
 .footer{
@@ -455,6 +547,10 @@ ul#navmenu li:hover .sub1{
 	/*Main container with image as background*/
 	.mainContainer .backgd{
 		width: 630px;
+	}
+	/**********RULES FOR SLIDER IN SECTION MUSCLE**************/
+	.slides {
+	    width: 630px;
 	}
 	/***********RULES FOR FOOTER**************/
 	/* rules for all content in footer */
