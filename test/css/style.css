@@ -204,7 +204,7 @@ ul#navmenu li:hover .sub1{
 .mainContainer .backgd{
 	position: relative;
 	width: 100%;
-	z-index:0;
+	z-index:-1;
 }
 /*rules for button*/
 .button{
@@ -224,10 +224,21 @@ ul#navmenu li:hover .sub1{
 /*Rules for span to specification subsection*/
 #targetSpec{
 	color: #030303;
+	position: absolute;
+	z-index: 1;
+	left: 0px;
 	cursor: pointer;
 	background-color: transparent;
-	text-align: left;
 	float: left;
+	margin-left: 100px;
+	width: 300px;
+	height: 600px;
+}
+/*Rules for second image to use on hover for specification subsection*/
+#backgdSpec{
+	position: absolute;
+	display: none;
+	z-index: 0;
 }
 /*Rules for specification subsection*/
 #specContainer{
@@ -246,6 +257,7 @@ ul#navmenu li:hover .sub1{
 	z-index: 100; /* Higher than anything else in the document */
 	cursor: pointer;
 }
+/*Rules for icon image to close spec*/
 #closeIcon img{
 	position: absolute;
 	top: 0px;

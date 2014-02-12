@@ -100,3 +100,11 @@ $(document).keyup(function(e) {
 		});	
 	}
 });
+
+$("#targetSpec").mouseover(function(){
+	document.getElementById("backgdSpec").style.display = "block";
+});
+
+$("#targetSpec").mouseout(function(){
+	document.getElementById("backgdSpec").style.display = "none";
+});
