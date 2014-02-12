@@ -87,7 +87,9 @@ ul#navmenu a{
 	display: block;
 	color: #ddd;/*#002F64;*/
 	text-align: center;		
-	margin: 20px 20px;
+	margin: 20px 0px;
+	padding-left: 20px;
+	padding-right: 20px;
 	padding-bottom: 20px;
 }
 /* rules for ALL ANCHOR element -> MAIN LI hover*/
@@ -125,6 +127,8 @@ ul#navmenu .sub1 li{
 }
 /* rules for SUB ANCHOR element*/
 ul#navmenu .sub1 a{
+	padding-left: 0px;
+	padding-right: 0px;
 	color: #ddd;
 	width: 100%;
 	margin: 5px auto;
