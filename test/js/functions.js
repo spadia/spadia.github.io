@@ -14,7 +14,17 @@ function style(){
 	//Second container
 	containerHeight = $("#mainContainer2").height();
 	itemHeight = $("#mainText2").height();
-	$('#mainText2').css("margin-top",Math.round(containerHeight/2-itemHeight/2));
+	$('#mainText2').css("margin-top",Math.round(containerHeight/7.6));
+
+
+	itemHeight = Math.round(containerHeight/1.9);
+	$('#targetSpec').css({'height':itemHeight,'margin-top':Math.round(itemHeight/2)});
+	//font size in second container
+	var targetDiv = document.getElementById("p1Click");
+	$(targetDiv).css('font-size',Math.round(containerHeight*3/76));
+
+
+
 	//Third container
 	containerHeight = $("#mainContainer3").height();
 	itemHeight = $("#mainText3").height();
@@ -129,6 +139,7 @@ $(window).load(function(){
 
 $( "#targetSpec" ).click(function() {
   	document.getElementById("backgdSpecClick").style.display = "block";
+  	$("#mainText2").fadeTo(800,0);
 	$("#backgdSpecClick").fadeTo(800,1,function(){
 		document.getElementById("specContainer").style.display = "block";
 	  	document.getElementById("closeIcon").style.display = "block";
@@ -151,6 +162,7 @@ $( "#targetSpec" ).click(function() {
 
 
 $( "#closeIcon").click(function() {	
+  	$("#mainText2").fadeTo(200,1);
 	$("#closeIcon").fadeTo(400,0, function(){
 		document.getElementById("closeIcon").style.display = "none";		
 	});
@@ -164,6 +176,7 @@ $( "#closeIcon").click(function() {
 
 $(document).keyup(function(e) {
 	if (e.keyCode == 27){ 
+  		$("#mainText2").fadeTo(200,1);
 		$("#closeIcon").fadeTo(400,0, function(){
 			document.getElementById("closeIcon").style.display = "none";		
 		});

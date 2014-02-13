@@ -174,8 +174,15 @@ ul#navmenu li:hover .sub1{
 	width: 50%;
 }
 .mainContainer #mainText2{
-	margin-left: 33%;	
-	width: 33%;
+	text-align: left;
+	margin-left: 83%;
+	width: 16%;
+}
+.mainContainer #mainText2 .p1{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	color: #333;
 }
 .mainContainer #mainText3{
 	width: 50%;	
@@ -199,9 +206,6 @@ ul#navmenu li:hover .sub1{
 }
 .mainContainer #mainText1 .p2, #mainText3 .p2{
 	color: #ddd;
-}
-.mainContainer #mainText2 .p2{
-	color: #333;
 }
 .mainContainer #sectionText1 .p2, #sectionText2 .p2, #sectionText3 .p2{
 	color: #333;
@@ -236,16 +240,14 @@ ul#navmenu li:hover .sub1{
 }
 /*Rules for span to specification subsection*/
 #targetSpec{
-	color: #030303;
 	position: absolute;
 	z-index: 2;
 	left: 0px;
 	cursor: pointer;
 	background-color: transparent;
 	float: left;
-	margin-left: 100px;
-	width: 300px;
-	height: 600px;
+	margin-left: 10%;
+	width: 54%;
 }
 /*Rules for second image to use on hover for specification subsection*/
 #backgdSpec{
@@ -577,8 +579,8 @@ input:checked + .slide-container .nav label {
 		width: 315px;
 	}
 	.mainContainer #mainText2{
-		margin-left: 210px;	
-		width: 210px;
+		margin-left: 522px;	
+		width: 101px;
 	}
 	.mainContainer #mainText3{
 		width: 315px;
@@ -604,6 +606,11 @@ input:checked + .slide-container .nav label {
 		font-size: 40px;
 		margin-top: 10px;
 		margin-right: 10px;
+	}
+	/*Rules for span to specification subsection*/
+	#targetSpec{
+		margin-left: 63px;
+		width: 340px;
 	}
 	/**********RULES FOR SLIDER IN SECTION MUSCLE**************/
 	.slides {
