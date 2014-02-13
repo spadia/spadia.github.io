@@ -385,9 +385,14 @@ input:checked + .slide-container .nav label {
 }
 /***********RULES FOR ABOUT SECTIONS*************/
 .mainContainer #contactText{
-	margin: 45px 5%;
+	margin: 45px 7%;
 	margin-bottom: 55px;
-	width: 40%;
+	width: 85%;
+}
+@media screen and (min-width: 875px){
+	.mainContainer #contactText{
+		width: 45%;
+	}
 }
 #contactText .p1{
 	font-family: 'Open Sans', sans-serif;
@@ -544,11 +549,6 @@ input:checked + .slide-container .nav label {
 		padding: 10px 20px;
 		line-height: 200%;
 	}
-	/***********RULES FOR ABOUT SECTIONS*************/
-	.mainContainer #contactText{
-		margin: 45px 30px;
-		width: 560px;
-	}
 }
 @media screen and (max-width: 630px) and (min-width: 0px){
 	/********RULES FOR TABLE WITH MENU CONTENT********/
@@ -630,10 +630,10 @@ input:checked + .slide-container .nav label {
 		font-size: 15px;
 	}
 	/***********RULES FOR ABOUT SECTIONS*************/
-	.mainContainer #contactText{
+	/*.mainContainer #contactText{
 		margin: 45px 5%;
 		width: 90%;
-	}
+	}*/
 	/***********RULES FOR FOOTER**************/
 	/* rules for all content in footer */
 	.footer{
