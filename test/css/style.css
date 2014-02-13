@@ -169,7 +169,7 @@ ul#navmenu li:hover .sub1{
 	z-index: 1;
 	text-align: center;
 }
-.mainContainer #mainText1, #sectionText1, #sectionText3{
+.mainContainer #mainText1{
 	margin-left: 45%;	
 	width: 50%;
 }
@@ -177,10 +177,15 @@ ul#navmenu li:hover .sub1{
 	margin-left: 33%;	
 	width: 33%;
 }
-.mainContainer #mainText3,  #sectionText2{
+.mainContainer #mainText3{
 	width: 50%;
 	margin-left: 5%;
 }
+ .mainContainer #sectionText1,  #sectionText2, #sectionText3{
+ 	width: 50%;
+ 	margin-left: 5%;
+ 	text-align: left;
+ }
 .mainContainer .mainText .p1{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 40px;
@@ -540,7 +545,7 @@ input:checked + .slide-container .nav label {
 	.mainContainer{
 		width: 630px;
 	}
-	.mainContainer #mainText1, #sectionText1, #sectionText3{
+	.mainContainer #mainText1{
 		margin-left: 300px;	
 		width: 315px;
 	}
@@ -548,10 +553,14 @@ input:checked + .slide-container .nav label {
 		margin-left: 210px;	
 		width: 210px;
 	}
-	.mainContainer #mainText3, #sectionText2{
+	.mainContainer #mainText3{
 		width: 315px;
 		margin-left: 15px;
 	}
+	.mainContainer #sectionText1,  #sectionText2, #sectionText3{
+	 	width: 315px;
+	 	margin-left: 15px;
+	 }
 	/*Main container with logo*/
 	.mainContainer #logoHD{
 		position: absolute;
