@@ -115,6 +115,11 @@ function style(){
 	$('#next3').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
 	$('#prev4').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
 	$('#next4').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
+	/*STYLE FOR LEADERSHIP*/
+	containerWidth = $('#leaderContainer1').width();
+	$('#leaderContainer1').css("height",containerWidth);
+	var tempMargin = $('#leaderContainer1').css("margin-left");
+	$('#leaderContainer1').css({"margin-top":tempMargin,"margin-bottom":tempMargin});
 }
 
 $(window).load(function(){  

@@ -410,6 +410,20 @@ input:checked + .slide-container .nav label {
 #contactText a{
 	color: #00A8CB;
 }
+/************RULES FOR LEADERSHIP SECTION***********/
+.leaderContainer{
+	width: 42%;
+	height: 100px;
+	margin: 2%;
+	outline: 1px red solid;
+}
+.leaderContainer span{
+	width: 100%;
+	cursor: pointer;
+}
+.leaderContainer img{
+	width: 100%;
+}
 /***********RULES FOR FOOTER**************/
 /* rules for all content in footer */
 .footer{
