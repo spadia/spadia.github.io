@@ -631,8 +631,8 @@ input:checked + .slide-container .nav label {
 	}
 	/***********RULES FOR ABOUT SECTIONS*************/
 	.mainContainer #contactText{
-		margin: 45px 30px;
-		width: 560px;
+		margin: 45px 5%;
+		width: 90%;
 	}
 	/***********RULES FOR FOOTER**************/
 	/* rules for all content in footer */
