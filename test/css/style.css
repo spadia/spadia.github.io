@@ -381,6 +381,28 @@ input:checked + .slide-container .nav label {
 	font-size: 18px;
 	line-height: 150%;
 }
+/***********RULES FOR CONTACT*************/
+#contactText{
+	margin: 45px 5%;
+	margin-bottom: 55px;
+	width: 40%;
+}
+#contactText .p1{
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	color: #333;
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+#contactText .p2{
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+	color: #777;
+	font-size: 15px;
+}
+#contactText a{
+	color: #00A8CB;
+}
 /***********RULES FOR FOOTER**************/
 /* rules for all content in footer */
 .footer{
