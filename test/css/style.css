@@ -381,7 +381,7 @@ input:checked + .slide-container .nav label {
 	font-size: 18px;
 	line-height: 150%;
 }
-/***********RULES FOR CONTACT*************/
+/***********RULES FOR ABOUT SECTIONS*************/
 #contactText{
 	margin: 45px 5%;
 	margin-bottom: 55px;
@@ -542,6 +542,11 @@ input:checked + .slide-container .nav label {
 		padding: 10px 20px;
 		line-height: 200%;
 	}
+	/***********RULES FOR ABOUT SECTIONS*************/
+	#contactText{
+		margin: 45px 30px;
+		width: 560px;
+	}
 }
 @media screen and (max-width: 630px) and (min-width: 0px){
 	/********RULES FOR TABLE WITH MENU CONTENT********/
@@ -616,6 +621,11 @@ input:checked + .slide-container .nav label {
 	}
 	.mainVideo .videoText .p2{
 		font-size: 15px;
+	}
+	/***********RULES FOR ABOUT SECTIONS*************/
+	#contactText{
+		margin: 45px 30px;
+		width: 560px;
 	}
 	/***********RULES FOR FOOTER**************/
 	/* rules for all content in footer */
