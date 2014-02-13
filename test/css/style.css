@@ -384,7 +384,7 @@ input:checked + .slide-container .nav label {
 	line-height: 150%;
 }
 /***********RULES FOR ABOUT SECTIONS*************/
-#contactText{
+.mainContainer #contactText{
 	margin: 45px 5%;
 	margin-bottom: 55px;
 	width: 40%;
@@ -545,7 +545,7 @@ input:checked + .slide-container .nav label {
 		line-height: 200%;
 	}
 	/***********RULES FOR ABOUT SECTIONS*************/
-	#contactText{
+	.mainContainer #contactText{
 		margin: 45px 30px;
 		width: 560px;
 	}
@@ -630,7 +630,7 @@ input:checked + .slide-container .nav label {
 		font-size: 15px;
 	}
 	/***********RULES FOR ABOUT SECTIONS*************/
-	#contactText{
+	.mainContainer #contactText{
 		margin: 45px 30px;
 		width: 560px;
 	}
