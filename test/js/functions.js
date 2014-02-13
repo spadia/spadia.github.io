@@ -29,6 +29,9 @@ function style(){
 		tempDiff = Math.round(Math.abs(tempDiff));
 		$("#sectionContainer1").css("margin-top",tempDiff);
 		$("#sectionContainer1").css("margin-bottom",tempDiff);
+	}else{
+		$("#sectionContainer1").css("margin-top",0);
+		$("#sectionContainer1").css("margin-bottom",0);
 	};
 	//Second container
 	containerHeight = $("#sectionContainer2").height();
@@ -39,6 +42,9 @@ function style(){
 		tempDiff = Math.round(Math.abs(tempDiff));
 		$("#sectionContainer2").css("margin-top",tempDiff);
 		$("#sectionContainer2").css("margin-bottom",tempDiff);
+	}else{
+		$("#sectionContainer2").css("margin-top",0);
+		$("#sectionContainer2").css("margin-bottom",0);
 	};
 	//Third container
 	containerHeight = $("#sectionContainer3").height();
@@ -49,12 +55,41 @@ function style(){
 		tempDiff = Math.round(Math.abs(tempDiff));
 		$("#sectionContainer3").css("margin-top",tempDiff);
 		$("#sectionContainer3").css("margin-bottom",tempDiff);
+	}else{
+		$("#sectionContainer3").css("margin-top",0);
+		$("#sectionContainer3").css("margin-bottom",0);
 	};
-	//Video container
+	/*Style for video containers*/
 	var containerWidth = $("#videoContainer1").width();
 	$('#videoContainer1').css("height",containerWidth*3/4);
 	var containerWidth = $("#videoContainer2").width();
 	$('#videoContainer2').css("height",containerWidth*3/4);
+	//Style for video container and text 1
+	containerHeight = $("#videoContainer1").height();
+	itemHeight = $('#videoText1').height();
+	tempDiff = containerHeight - itemHeight;
+	if(tempDiff > 0){
+		$('#mainVideo1').css("height",containerHeight);	
+		$('#videoText1').css("margin-top",Math.round(tempDiff/2));
+		$('#videoContainer1').css("margin-top",0);
+	}else{
+		$('#mainVideo1').css("height",itemHeight);
+		$('#videoContainer1').css("margin-top",Math.round(-tempDiff/2));
+		$('#videoText1').css("margin-top",0);
+	}
+	//Style for video container and text 2
+	containerHeight = $("#videoContainer2").height();
+	itemHeight = $('#videoText2').height();
+	tempDiff = containerHeight - itemHeight;
+	if(tempDiff > 0){
+		$('#mainVideo2').css("height",containerHeight);	
+		$('#videoText2').css("margin-top",Math.round(tempDiff/2));
+		$('#videoContainer2').css("margin-top",0);
+	}else{
+		$('#mainVideo2').css("height",itemHeight);
+		$('#videoContainer2').css("margin-top",Math.round(-tempDiff/2));
+		$('#videoText2').css("margin-top",0);
+	}
 	/*Style for slider*/
 	//Main container
 	containerWidth = $('.slides').width();
@@ -80,6 +115,17 @@ $(window).load(function(){
 		document.getElementById("hideAll").style.display = "none";	
 	});	
 });
+
+//$(window).resize(style);
+ var resizeTimer;
+
+    //Event to handle resizing
+    $(window).resize(function () 
+    {	
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(style, 400);
+    });
+
 
 $( "#targetSpec" ).click(function() {
   	document.getElementById("backgdSpecClick").style.display = "block";
