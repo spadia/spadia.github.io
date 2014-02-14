@@ -414,7 +414,7 @@ input:checked + .slide-container .nav label {
 }
 /************RULES FOR LEADERSHIP SECTION***********/
 .leaderContainer{
-	width: 30%;
+	width: 25%;
 	margin: 5%;
 	padding: 0px;
 	position: relative;
@@ -429,7 +429,6 @@ input:checked + .slide-container .nav label {
 	transition: all 0.2s ease-in-out;
 	-webkit-transition: all 0.2s ease-in-out;
 }
-
 .leaderContainer .blueDiv{
 	background: rgba(0,168,203,0.5);
 	position: absolute;
@@ -460,11 +459,6 @@ input:checked + .slide-container .nav label {
 .leaderContainer img{
 	width: 100%;
 }
-.leaderContainer #imgLogoLeader{
-	margin: 10%; 
-	margin-top: 4%; 
-	width: 80%;
-}
 .leaderDiv .p1{	
 	font-family: 'Open Sans', sans-serif;	
 	font-size: 25px;
@@ -473,6 +467,9 @@ input:checked + .slide-container .nav label {
 	font-family: 'Open Sans', sans-serif;	
 	font-size: 13px;
 	display: none;
+	opacity: 0;
+	transition: all 0.1s ease-in-out;
+	-webkit-transition": all 0.1s ease-in-out;
 }
 /***********RULES FOR FOOTER**************/
 /* rules for all content in footer */
