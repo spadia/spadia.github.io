@@ -116,7 +116,11 @@ function style(){
 	$('#prev4').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
 	$('#next4').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
 	/*STYLE FOR LEADERSHIP*/
-	//First container
+	//FIRST CONTAINER
+	containerWidth = $('#mainLeaderContainer').width();
+	var factor = containerWidth/1351;
+	$('#mainLeaderContainer').css("margin-top",150*factor);
+	$('#mainLeaderContainer').css("margin-bottom",150*factor);
 	$('#leaderDiv1').css({"transition": "none","-webkit-transition": "none"});
 	containerWidth = $('#leaderContainer1').width();
 	$('#leaderContainer1').css("height",containerWidth);
@@ -125,59 +129,34 @@ function style(){
 	containerHeight = $("#name1").height();
 	$('#leaderDiv1').css({"height": containerHeight,"margin-top":containerWidth-containerHeight});
 	//Text inside first container
-	var factor = $(window).width()/1351;
+	factor = containerWidth/337;
 	$("#name1").css("font-size",25*factor);
 	$("#nameDesc1").css("font-size",13*factor);
-	//Second container
+	//SECOND CONTAINER
+	$('#leaderDiv2').css({"transition": "none","-webkit-transition": "none"});
+	containerWidth = $('#leaderContainer2').width();
 	$('#leaderContainer2').css("height",containerWidth);
 	$('#leaderSpan2').css("height",containerWidth);
+	$("#dummyDiv2").css("height",containerWidth);
+	containerHeight = $("#name2").height();
 	$('#leaderDiv2').css({"height": containerHeight,"margin-top":containerWidth-containerHeight});
-	//Third container
+	//Text inside first container
+	factor = containerWidth/337;
+	$("#name2").css("font-size",25*factor);
+	$("#nameDesc2").css("font-size",13*factor);
+	//THIRD CONTAINER
+	$('#leaderDiv3').css({"transition": "none","-webkit-transition": "none"});
+	containerWidth = $('#leaderContainer3').width();
 	$('#leaderContainer3').css("height",containerWidth);
 	$('#leaderSpan3').css("height",containerWidth);
+	$("#dummyDiv3").css("height",containerWidth);
+	containerHeight = $("#name3").height();
 	$('#leaderDiv3').css({"height": containerHeight,"margin-top":containerWidth-containerHeight});
-	//Fourth container
-	$('#leaderContainer4').css("height",containerWidth);
-	$('#leaderSpan4').css("height",containerWidth);
-	$('#leaderDiv4').css({"height": containerHeight,"margin-top":containerWidth-containerHeight});
+	//Text inside first container
+	factor = containerWidth/337;
+	$("#name3").css("font-size",25*factor);
+	$("#nameDesc3").css("font-size",13*factor);
 };
-
-$("#dummyDiv1").mouseover(function(){
-	var factor = $(window).width()/1351;
-	var tempMargin = 8*factor;
-
-	$("#name1").css("margin-bottom",tempMargin);
-	$("#name1").css("font-size",25*factor);
-
-
-	var containerHeight = $('#leaderContainer1').height();
-	var itemHeight = $('#name1').height()+$("#nameDesc1").height()+tempMargin;
-
-	$('#leaderDiv1').css({"transition": "all 0.2s ease-in-out","-webkit-transition": "all 0.2s ease-in-out;"});
-	
-	$('#leaderDiv1').css("height", Math.round(itemHeight));
-	$('#leaderDiv1').css("margin-top",containerHeight-itemHeight);
-
-	document.getElementById("nameDesc1").style.display = "block";
-	$("#nameDesc1").css("opacity",1);
-
-	$('#blueDiv1').css("height",containerHeight-itemHeight);
-	$('#blueDiv1').css("opacity",1);
-});
-
-$("#dummyDiv1").mouseout(function(){
-	var containerHeight = $('#leaderContainer1').height();
-	var itemHeight = $('#name1').height();
-	$('#leaderDiv1').css({"transition": "all 0.2s ease-in-out","-webkit-transition": "all 0.3s ease-in-out;"});
-	$('#leaderDiv1').css("height", Math.round(itemHeight));	
-	$('#leaderDiv1').css("margin-top",containerHeight-itemHeight);
-
-	document.getElementById("nameDesc1").style.display = "none";
-
-	$('#blueDiv1').css("height",0);
-	$('#blueDiv1').css("opacity",0);
-});
-
 
 $(window).load(function(){  
 	$(document).ready(style);
