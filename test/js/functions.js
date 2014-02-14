@@ -158,10 +158,8 @@ $("#dummyDiv1").mouseover(function(){
 	$('#leaderDiv1').css("height", Math.round(itemHeight));
 	$('#leaderDiv1').css("margin-top",containerHeight-itemHeight);
 
-	setTimeout(function(){
-		document.getElementById("nameDesc1").style.display = "block";
-		$("#nameDesc1").css("opacity",1);
-	},200);
+	document.getElementById("nameDesc1").style.display = "block";
+	$("#nameDesc1").css("opacity",1);
 
 	$('#blueDiv1').css("height",containerHeight-itemHeight);
 	$('#blueDiv1').css("opacity",1);
