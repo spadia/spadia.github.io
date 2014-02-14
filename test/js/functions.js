@@ -116,11 +116,51 @@ function style(){
 	$('#prev4').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
 	$('#next4').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
 	/*STYLE FOR LEADERSHIP*/
+	//First container
 	containerWidth = $('#leaderContainer1').width();
 	$('#leaderContainer1').css("height",containerWidth);
-	var tempMargin = $('#leaderContainer1').css("margin-left");
-	$('#leaderContainer1').css({"margin-top":tempMargin,"margin-bottom":tempMargin});
-}
+	$('#leaderSpan1').css("height",containerWidth);
+	$("#dummyDiv1").css("height",containerWidth);
+	containerHeight = $("#name1").height();
+	$('#leaderDiv1').css({"height": containerHeight,"margin-top":containerWidth-containerHeight});
+	//Second container
+	$('#leaderContainer2').css("height",containerWidth);
+	$('#leaderSpan2').css("height",containerWidth);
+	$('#leaderDiv2').css({"height": containerHeight,"margin-top":containerWidth-containerHeight});
+	//Third container
+	$('#leaderContainer3').css("height",containerWidth);
+	$('#leaderSpan3').css("height",containerWidth);
+	$('#leaderDiv3').css({"height": containerHeight,"margin-top":containerWidth-containerHeight});
+	//Fourth container
+	$('#leaderContainer4').css("height",containerWidth);
+	$('#leaderSpan4').css("height",containerWidth);
+	$('#leaderDiv4').css({"height": containerHeight,"margin-top":containerWidth-containerHeight});
+};
+
+$("#dummyDiv1").mouseover(function(){
+	var containerHeight = $('#leaderContainer1').height();
+	var itemHeight = $('#name1').height()+$("#nameDesc1").height();
+	$('#leaderDiv1').css({"transition": "all 0.2s ease-in-out","-webkit-transition": "all 0.3s ease-in-out;"});
+	
+	$('#leaderDiv1').css("height", Math.round(itemHeight));
+	$('#leaderDiv1').css("margin-top",containerHeight-itemHeight);
+
+	document.getElementById("nameDesc1").style.display = "block";
+
+	$('#blueDiv1').css("height",containerHeight-itemHeight);
+	$('#blueDiv1').css("opacity",1);
+});
+
+$("#dummyDiv1").mouseout(function(){
+	var containerHeight = $('#leaderContainer1').height();
+	var itemHeight = containerHeight*.4;
+	$('#leaderDiv1').css({"transition": "all 0.2s ease-in-out","-webkit-transition": "all 0.3s ease-in-out;"});
+	$('#leaderDiv1').css("height", Math.round(itemHeight));	
+	$('#leaderDiv1').css("margin-top",containerHeight-itemHeight);
+	$('#blueDiv1').css("height",0);
+	$('#blueDiv1').css("opacity",0);
+});
+
 
 $(window).load(function(){  
 	$(document).ready(style);
