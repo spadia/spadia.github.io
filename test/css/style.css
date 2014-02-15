@@ -417,14 +417,15 @@ input:checked + .slide-container .nav label {
 	width: 100%;
 	margin: 0px;
 	padding: 0px;
+	position: relative;
 }
 .leaderContainer{
 	width: 25%;
 	margin: 2%;
 	padding: 0px;
 	position: relative;
-	border: solid 5px black;
 	display: inline-block;
+	border: solid 5px black;
 }
 .leaderContainer span{
 	left: 0px;

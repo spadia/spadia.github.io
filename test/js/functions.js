@@ -121,7 +121,7 @@ function style(){
 	var factor = containerWidth/1351;
 	$('#mainLeaderContainer').css("margin-top",150*factor);
 	$('#mainLeaderContainer').css("margin-bottom",150*factor);
-	$('#leaderDiv1').css({"transition": "none","-webkit-transition": "none"});
+	$('#leaderContainer1').css({"transition": "none","-webkit-transition": "none"});
 	containerWidth = $('#leaderContainer1').width();
 	$('#leaderContainer1').css("height",containerWidth);
 	$('#leaderSpan1').css("height",containerWidth);
@@ -133,7 +133,7 @@ function style(){
 	$("#name1").css("font-size",25*factor);
 	$("#nameDesc1").css("font-size",13*factor);
 	//SECOND CONTAINER
-	$('#leaderDiv2').css({"transition": "none","-webkit-transition": "none"});
+	$('#leaderContainer2').css({"transition": "none","-webkit-transition": "none"});
 	containerWidth = $('#leaderContainer2').width();
 	$('#leaderContainer2').css("height",containerWidth);
 	$('#leaderSpan2').css("height",containerWidth);
@@ -145,7 +145,7 @@ function style(){
 	$("#name2").css("font-size",25*factor);
 	$("#nameDesc2").css("font-size",13*factor);
 	//THIRD CONTAINER
-	$('#leaderDiv3').css({"transition": "none","-webkit-transition": "none"});
+	$('#leaderContainer3').css({"transition": "none","-webkit-transition": "none"});
 	containerWidth = $('#leaderContainer3').width();
 	$('#leaderContainer3').css("height",containerWidth);
 	$('#leaderSpan3').css("height",containerWidth);
@@ -156,6 +156,11 @@ function style(){
 	factor = containerWidth/337;
 	$("#name3").css("font-size",25*factor);
 	$("#nameDesc3").css("font-size",13*factor);
+	// protect containers of animations
+	$("#leaderContainer1").css('left','auto');
+	$("#leaderContainer2").css('left','auto');
+	$("#leaderContainer3").css('left','auto');	
+	state = 0;
 };
 
 $(window).load(function(){  
@@ -169,13 +174,12 @@ $(window).load(function(){
 
 //$(window).resize(style);
  var resizeTimer;
-
-    //Event to handle resizing
-    $(window).resize(function () 
-    {	
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(style, 400);
-    });
+//Event to handle resizing
+$(window).resize(function () 
+{	
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(style, 400);
+});
 
 
 $( "#targetSpec" ).click(function() {
