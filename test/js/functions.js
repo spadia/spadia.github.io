@@ -120,7 +120,7 @@ function style(){
 	containerWidth = $('#mainLeaderContainer').width();
 	var factor = containerWidth/1351;
 	$('#mainLeaderContainer').css("margin-top",150*factor);
-	$('#mainLeaderContainer').css("margin-bottom",150*factor);
+	$('#footerLeader').css("margin-top",150*factor);
 	$('#leaderContainer1').css({"transition": "none","-webkit-transition": "none"});
 	containerWidth = $('#leaderContainer1').width();
 	$('#leaderContainer1').css("height",containerWidth);
@@ -161,6 +161,23 @@ function style(){
 	$("#leaderContainer2").css('left','auto');
 	$("#leaderContainer3").css('left','auto');	
 	state = 0;
+	//FIRST CONTAINER WITH DESCRIPTION OF LEADERSHIP
+	containerWidth = $("#mainLeaderContainer").width();
+	var factor = 1351/containerWidth;
+	$("#leaderDesc1").css("width",1160/factor);
+	$("#leaderDesc1").css("margin-left",(containerWidth-(1160/factor))/2);
+	document.getElementById("leaderDesc1").style.display = "none";
+	$("#leaderDesc1").css("height", 0);
+	//SECOND CONTAINER WITH DESCRIPTION OF LEADERSHIP
+	$("#leaderDesc2").css("width",1160/factor);
+	$("#leaderDesc2").css("margin-left",(containerWidth-(1160/factor))/2);
+	document.getElementById("leaderDesc2").style.display = "none";
+	$("#leaderDesc2").css("height", 0);
+	//SECOND CONTAINER WITH DESCRIPTION OF LEADERSHIP
+	$("#leaderDesc3").css("width",1160/factor);
+	$("#leaderDesc3").css("margin-left",(containerWidth-(1160/factor))/2);
+	document.getElementById("leaderDesc3").style.display = "none";
+	$("#leaderDesc3").css("height", 0);
 };
 
 $(window).load(function(){  
