@@ -171,12 +171,16 @@ function style(){
 	$("#leaderDesc2").css("width",1160/factor);
 	$("#leaderDesc2").css("margin-left",(containerWidth-(1160/factor))/2);
 	$("#leaderDesc2").css("height", 0);
-	//SECOND CONTAINER WITH DESCRIPTION OF LEADERSHIP
+	//THIRD CONTAINER WITH DESCRIPTION OF LEADERSHIP
 	$("#leaderDesc3").css("width",1160/factor);
 	$("#leaderDesc3").css("margin-left",(containerWidth-(1160/factor))/2);
 	$("#leaderDesc3").css("height", 0);
+	if (leadership == 1){
+		document.getElementById("leaderDesc1").style.display = "none";
+		document.getElementById("leaderDesc2").style.display = "none";
+		document.getElementById("leaderDesc3").style.display = "none";
+	}
 };
-
 $(window).load(function(){  
 	$(document).ready(style);
 	$(window).ready(style);
@@ -185,7 +189,7 @@ $(window).load(function(){
 		document.getElementById("hideAll").style.display = "none";	
 	});	
 });
-
+var leadership;
 //$(window).resize(style);
  var resizeTimer;
 //Event to handle resizing

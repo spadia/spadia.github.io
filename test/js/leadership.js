@@ -1,3 +1,4 @@
+leadership = 1;
 var id;
 $("#dummyDiv1").mouseover(function(){
 	id = 1;
