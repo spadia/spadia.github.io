@@ -505,6 +505,17 @@ input:checked + .slide-container .nav label {
 	font-size: 13px;
 	color: #ddd;
 }
+/*Arrow that points up*/
+#arrowUp {
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #030303;
+	position: relative;
+	z-index:2;
+	display: none;
+}
 /***********RULES FOR FOOTER**************/
 /* rules for all content in footer */
 .footer{

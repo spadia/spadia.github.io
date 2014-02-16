@@ -179,6 +179,7 @@ function style(){
 		document.getElementById("leaderDesc1").style.display = "none";
 		document.getElementById("leaderDesc2").style.display = "none";
 		document.getElementById("leaderDesc3").style.display = "none";
+		document.getElementById("arrowUp").style.display = "none";		
 	}
 };
 $(window).load(function(){  

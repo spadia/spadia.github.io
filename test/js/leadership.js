@@ -127,6 +127,7 @@ $("#dummyDiv1").click(function(){
 		$("#leaderContainer2").animate({left: place}, 500);
 		$("#leaderContainer3").animate({left: -2*place}, 500, function(){
 			$("#leaderDesc2").animate({height: 0},500,function(){
+				document.getElementById("arrowUp").style.display = "block";
 				document.getElementById("leaderDesc2").style.display = "none";
 				document.getElementById("leaderDesc3").style.display = "none";
 				document.getElementById("leaderDesc1").style.display = "block";
@@ -149,6 +150,7 @@ $("#dummyDiv2").click(function(){
 		$("#leaderContainer2").animate({left: 0}, 500);
 		$("#leaderContainer3").animate({left: 0}, 500, function(){
 			$("#leaderDesc1").animate({height: 0},500,function(){
+				document.getElementById("arrowUp").style.display = "block";
 				document.getElementById("leaderDesc1").style.display = "none";
 				document.getElementById("leaderDesc3").style.display = "none";
 				document.getElementById("leaderDesc2").style.display = "block";
@@ -180,6 +182,7 @@ $("#dummyDiv3").click(function(){
 		$("#leaderContainer2").animate({left: -place}, 500);
 		$("#leaderContainer3").animate({left: -place}, 500, function(){
 			$("#leaderDesc1").animate({height: 0},500,function(){
+				document.getElementById("arrowUp").style.display = "block";
 				document.getElementById("leaderDesc1").style.display = "none";
 				document.getElementById("leaderDesc2").style.display = "none";
 				document.getElementById("leaderDesc3").style.display = "block";
