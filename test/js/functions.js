@@ -161,25 +161,31 @@ function style(){
 	$("#leaderContainer2").css('left','auto');
 	$("#leaderContainer3").css('left','auto');	
 	state = 0;
-	//FIRST CONTAINER WITH DESCRIPTION OF LEADERSHIP
-	containerWidth = $("#mainLeaderContainer").width();
-	factor = 1351/containerWidth;
-	$("#leaderDesc1").css("width",1160/factor);
-	$("#leaderDesc1").css("margin-left",(containerWidth-(1160/factor))/2);
-	$("#leaderDesc1").css("height", 0);
-	//SECOND CONTAINER WITH DESCRIPTION OF LEADERSHIP
-	$("#leaderDesc2").css("width",1160/factor);
-	$("#leaderDesc2").css("margin-left",(containerWidth-(1160/factor))/2);
-	$("#leaderDesc2").css("height", 0);
-	//THIRD CONTAINER WITH DESCRIPTION OF LEADERSHIP
-	$("#leaderDesc3").css("width",1160/factor);
-	$("#leaderDesc3").css("margin-left",(containerWidth-(1160/factor))/2);
-	$("#leaderDesc3").css("height", 0);
 	if (leadership == 1){
+		//FIRST CONTAINER WITH DESCRIPTION OF LEADERSHIP
+		containerWidth = $("#mainLeaderContainer").width();
+		factor = 1351/containerWidth;
+		$("#leaderDesc1").css("width",1160/factor);
+		$("#leaderDesc1").css("margin-left",(containerWidth-(1160/factor))/2);
+		$("#leaderDesc1").css("height", 0);
+		//SECOND CONTAINER WITH DESCRIPTION OF LEADERSHIP
+		$("#leaderDesc2").css("width",1160/factor);
+		$("#leaderDesc2").css("margin-left",(containerWidth-(1160/factor))/2);
+		$("#leaderDesc2").css("height", 0);
+		//THIRD CONTAINER WITH DESCRIPTION OF LEADERSHIP
+		$("#leaderDesc3").css("width",1160/factor);
+		$("#leaderDesc3").css("margin-left",(containerWidth-(1160/factor))/2);
+		$("#leaderDesc3").css("height", 0);
 		document.getElementById("leaderDesc1").style.display = "none";
 		document.getElementById("leaderDesc2").style.display = "none";
 		document.getElementById("leaderDesc3").style.display = "none";
-		document.getElementById("arrowUp").style.display = "none";		
+		document.getElementById("arrowUp").style.display = "none";
+		$("#textDesc1").css("font-size",20/factor);	
+		$("#textDesc2").css("font-size",20/factor);	
+		$("#textDesc3").css("font-size",20/factor);
+		$("#textDesc1").css({"padding-left": 40/factor, "padding-right": 40/factor});	
+		$("#textDesc2").css({"padding-left": 40/factor, "padding-right": 40/factor});	
+		$("#textDesc3").css({"padding-left": 40/factor, "padding-right": 40/factor});	
 	}
 };
 $(window).load(function(){  

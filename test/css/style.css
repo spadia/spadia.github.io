@@ -501,8 +501,9 @@ input:checked + .slide-container .nav label {
 	height: 0px;
 }
 .leaderDesc .p2{
-	font-family: 'Open Sans', sans-serif;	
-	font-size: 13px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;	
+	line-height: 180%;
 	color: #ddd;
 }
 /*Arrow that points up*/
@@ -512,8 +513,7 @@ input:checked + .slide-container .nav label {
 	border-left: 10px solid transparent;
 	border-right: 10px solid transparent;
 	border-bottom: 10px solid #030303;
-	position: relative;
-	z-index:2;
+	z-index:2;	
 	display: none;
 }
 /***********RULES FOR FOOTER**************/
@@ -742,6 +742,10 @@ input:checked + .slide-container .nav label {
 	.leaderContainer{
 		width: 157px;
 		margin: 12px;
+		margin-bottom: 0px;
+	}
+	#arrowDiv{
+		width: 630px;
 	}
 	/***********RULES FOR ABOUT SECTIONS*************/
 	/*.mainContainer #contactText{
