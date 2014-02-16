@@ -153,7 +153,7 @@ ul#navmenu li:hover .sub1{
 /***************Rules for main section********************/
 /*dummy div to add padding*/
 #paddingMenu{
-	height: 63px;
+	height: 61px;
 	position: relative;
 	z-index:2;
 	width: 100%;
