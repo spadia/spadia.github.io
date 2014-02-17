@@ -181,24 +181,15 @@ function style(){
 		$("#textDesc1").css({"padding-left": 40/factor, "padding-right": 40/factor});	
 		$("#textDesc2").css({"padding-left": 40/factor, "padding-right": 40/factor});	
 		$("#textDesc3").css({"padding-left": 40/factor, "padding-right": 40/factor});	
-	}/*
-	$("#specContainer").css("width",$(window).width());
-	$("#imgSpec").css("width",$(window).width());
-	$("#imgSpec").css("height",$(window).width()*9/16);*/
-
+	}
 
 		/*Style for container with specifications*/
 		var containerHeight = $("#specContainer").height();
 		var itemHeight = $("#imgSpec").height();
 		var tempDiff = Math.round(containerHeight/2-itemHeight/2);
-		if (tempDiff > 0){
-			$('#imgSpec').css("margin-top",tempDiff);
-		}else{
-			$('#imgSpec').css("height",itemHeight+2*tempDiff-itemHeight*.05);
-			$('#imgSpec').css("margin-top",itemHeight*.025);
-			var itemWidth = $("#imgSpec").width();
-			$('#imgSpec').css("width",itemWidth+2*tempDiff-itemHeight*.05);
-		}
+		$('#imgSpec').css("margin-top",tempDiff);
+		$('#imgSpec').css("width",$(window).width()*0.9);
+		$('#imgSpec').css("height",$(window).width()*9*0.9/16);
 		//Container with specifications text
 		var containerWidth = $("#specContainer").width();
 		var factor = containerWidth/1351;
@@ -209,7 +200,7 @@ function style(){
 		itemHeight = $("#specText").height();
 		factor = containerHeight/705;
 		$("#specText").css("margin-top",(containerHeight-itemHeight)/2+6*factor);
-		
+
 };
 $(window).load(function(){  
 	$(document).ready(style);
@@ -242,14 +233,9 @@ $( "#targetSpec" ).click(function() {
 		var containerHeight = $("#specContainer").height();
 		var itemHeight = $("#imgSpec").height();
 		var tempDiff = Math.round(containerHeight/2-itemHeight/2);
-		if (tempDiff > 0){
-			$('#imgSpec').css("margin-top",tempDiff);
-		}else{
-			$('#imgSpec').css("height",itemHeight+2*tempDiff-itemHeight*.05);
-			$('#imgSpec').css("margin-top",itemHeight*.025);
-			var itemWidth = $("#imgSpec").width();
-			$('#imgSpec').css("width",itemWidth+2*tempDiff-itemHeight*.05);
-		}
+		$('#imgSpec').css("margin-top",tempDiff);
+		$('#imgSpec').css("width",$(window).width()*0.9);
+		$('#imgSpec').css("height",$(window).width()*9*0.9/16);
 		//Container with specifications text
 		var containerWidth = $("#specContainer").width();
 		var factor = containerWidth/1351;
