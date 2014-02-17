@@ -185,6 +185,31 @@ function style(){
 	$("#specContainer").css("width",$(window).width());
 	$("#imgSpec").css("width",$(window).width());
 	$("#imgSpec").css("height",$(window).width()*9/16);*/
+
+
+		/*Style for container with specifications*/
+		var containerHeight = $("#specContainer").height();
+		var itemHeight = $("#imgSpec").height();
+		var tempDiff = Math.round(containerHeight/2-itemHeight/2);
+		if (tempDiff > 0){
+			$('#imgSpec').css("margin-top",tempDiff);
+		}else{
+			$('#imgSpec').css("height",itemHeight+2*tempDiff-itemHeight*.05);
+			$('#imgSpec').css("margin-top",itemHeight*.025);
+			var itemWidth = $("#imgSpec").width();
+			$('#imgSpec').css("width",itemWidth+2*tempDiff-itemHeight*.05);
+		}
+		//Container with specifications text
+		var containerWidth = $("#specContainer").width();
+		var factor = containerWidth/1351;
+		$("#specText").css("font-size",20*factor);
+		$("#specText").css("margin-left",10*factor);
+		$("#specText").css("width",300*factor);
+		containerHeight = $("#specContainer").height();
+		itemHeight = $("#specText").height();
+		factor = containerHeight/705;
+		$("#specText").css("margin-top",(containerHeight-itemHeight)/2+6*factor);
+		
 };
 $(window).load(function(){  
 	$(document).ready(style);
