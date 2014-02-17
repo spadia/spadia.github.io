@@ -270,3 +270,28 @@ $("#targetSpec").mouseout(function(){
 		document.getElementById("backgdSpec").style.display = "none";		
 	});
 });
+
+$("#facebook").mouseover(function(){
+	$("#facebook").fadeTo(200,1);
+});
+$("#facebook").mouseout(function(){
+	$("#facebook").stop().fadeTo(200,0);
+});
+$("#youtube").mouseover(function(){
+	$("#youtube").fadeTo(200,1);
+});
+$("#youtube").mouseout(function(){
+	$("#youtube").stop().fadeTo(200,0);
+});
+$("#linkedin").mouseover(function(){
+	$("#linkedin").fadeTo(200,1);
+});
+$("#linkedin").mouseout(function(){
+	$("#linkedin").stop().fadeTo(200,0);
+});
+$("#twitter").mouseover(function(){
+	$("#twitter").fadeTo(200,1);
+});
+$("#twitter").mouseout(function(){
+	$("#twitter").stop().fadeTo(200,0);
+});

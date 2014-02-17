@@ -565,58 +565,49 @@ input:checked + .slide-container .nav label {
 	height:48px;
 	display: inline-block;
     *display: inline;
-	background:transparent url('../images/facebook.png') center top no-repeat;
 }
 .facebook img{
-	width:100%;
-	display: none;
+	position: absolute;
 }
-.facebook:hover{
-	background-image: url('../images/facebook2.png');	
+.facebook #facebook{
+	opacity: 0;
 }
 .youtube{
 	width: 48px;
 	height:48px;
 	display: inline-block;
     *display: inline;
-	background:transparent url('../images/youtube.png') center top no-repeat;
 }
 .youtube img{
-	width:100%;
-	display: none;
+	position: absolute;
 }
-.youtube:hover{
-	background-image: url('../images/youtube2.png');	
+.youtube #youtube{
+	opacity: 0;
 }
 .linkedin{
 	width: 48px;
 	height:48px;
 	display: inline-block;
     *display: inline;
-	background:transparent url('../images/linkedin.png') center top no-repeat;
 }
 .linkedin img{
-	width:100%;
-	display: none;
+	position: absolute;	
 }
-.linkedin:hover{
-	background-image: url('../images/linkedin2.png');	
+.linkedin #linkedin{
+	opacity: 0;
 }
 .twitter{
 	width: 48px;
 	height:48px;
 	display: inline-block;
     *display: inline;
-	background:transparent url('../images/twitter.png') center top no-repeat;
 }
 .twitter img{
-	width:100%;
-	display: none;
+	position: absolute;
 }
-.twitter:hover{
-	background-image: url('../images/twitter2.png');
+.twitter #twitter{
+	opacity: 0;
 }
-
 @media screen and (max-width: 875px) and (min-width: 811px){
 	#flags{
 		margin: 0px;
