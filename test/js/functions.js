@@ -24,12 +24,6 @@ function style(){
 	containerHeight = $("#mainContainer3").height();
 	itemHeight = $("#mainText3").height();
 	$('#mainText3').css("margin-top",Math.round(containerHeight/2-itemHeight/2));
-	//Container with specifications text
-	var containerWidth = $("#specContainer").width();
-	var factor = containerWidth/1351;
-	$("#specText").css("font-size",20*factor);
-	$("#specText").css("margin-left",10*factor);
-	$("#specText").css("width",300*factor);
 	/*Style for containers in sections*/
 	//First container
 	containerHeight = $("#sectionContainer1").height();
@@ -231,9 +225,15 @@ $( "#targetSpec" ).click(function() {
 			var itemWidth = $("#imgSpec").width();
 			$('#imgSpec').css("width",itemWidth+2*tempDiff-itemHeight*.05);
 		}
+		//Container with specifications text
+		var containerWidth = $("#specContainer").width();
+		var factor = containerWidth/1351;
+		$("#specText").css("font-size",20*factor);
+		$("#specText").css("margin-left",10*factor);
+		$("#specText").css("width",300*factor);
 		containerHeight = $("#specContainer").height();
 		itemHeight = $("#specText").height();
-		var factor = containerHeight/705;
+		factor = containerHeight/705;
 		$("#specText").css("margin-top",(containerHeight-itemHeight)/2+6*factor);
 	});
 });
