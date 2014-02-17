@@ -187,10 +187,10 @@ function style(){
 		$("#textDesc1").css({"padding-left": 40/factor, "padding-right": 40/factor});	
 		$("#textDesc2").css({"padding-left": 40/factor, "padding-right": 40/factor});	
 		$("#textDesc3").css({"padding-left": 40/factor, "padding-right": 40/factor});	
-	}
+	}/*
 	$("#specContainer").css("width",$(window).width());
 	$("#imgSpec").css("width",$(window).width());
-	$("#imgSpec").css("height",$(window).width()*9/16);
+	$("#imgSpec").css("height",$(window).width()*9/16);*/
 };
 $(window).load(function(){  
 	$(document).ready(style);
