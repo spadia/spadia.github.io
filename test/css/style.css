@@ -272,6 +272,16 @@ ul#navmenu li:hover .sub1{
 	background: rgba(03,03,03,0.9);
 	z-index: 99;
 }
+/*Rules for specifications text*/
+#specContainer #specText{
+	color: #ddd;
+	position: absolute;
+	left: 0px;
+	text-align: right;
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 200%;
+}
 /*Rules for icon to close specification subsection*/
 #closeIcon{
 	background: transparent;

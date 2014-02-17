@@ -15,20 +15,21 @@ function style(){
 	containerHeight = $("#mainContainer2").height();
 	itemHeight = $("#mainText2").height();
 	$('#mainText2').css("margin-top",Math.round(containerHeight/7.6));
-
-
 	itemHeight = Math.round(containerHeight/1.9);
 	$('#targetSpec').css({'height':itemHeight,'margin-top':Math.round(itemHeight/2)});
 	//font size in second container
 	var targetDiv = document.getElementById("p1Click");
 	$(targetDiv).css('font-size',Math.round(containerHeight*3/76));
-
-
-
 	//Third container
 	containerHeight = $("#mainContainer3").height();
 	itemHeight = $("#mainText3").height();
 	$('#mainText3').css("margin-top",Math.round(containerHeight/2-itemHeight/2));
+	//Container with specifications text
+	var containerWidth = $("#specContainer").width();
+	var factor = containerWidth/1351;
+	$("#specText").css("font-size",20*factor);
+	$("#specText").css("margin-left",10*factor);
+	$("#specText").css("width",300*factor);
 	/*Style for containers in sections*/
 	//First container
 	containerHeight = $("#sectionContainer1").height();
@@ -47,7 +48,7 @@ function style(){
 	containerHeight = $("#sectionContainer2").height();
 	itemHeight = $("#sectionText2").height();
 	$('#sectionText2').css("margin-top",Math.round(containerHeight/2-itemHeight/2));
-	var tempDiff = containerHeight - itemHeight;
+	tempDiff = containerHeight - itemHeight;
 	if (tempDiff < 0){
 		tempDiff = Math.round(Math.abs(tempDiff));
 		$("#sectionContainer2").css("margin-top",tempDiff);
@@ -60,7 +61,7 @@ function style(){
 	containerHeight = $("#sectionContainer3").height();
 	itemHeight = $("#sectionText3").height();
 	$('#sectionText3').css("margin-top",Math.round(containerHeight/2-itemHeight/2));
-	var tempDiff = containerHeight - itemHeight;
+	tempDiff = containerHeight - itemHeight;
 	if (tempDiff < 0){
 		tempDiff = Math.round(Math.abs(tempDiff));
 		$("#sectionContainer3").css("margin-top",tempDiff);
@@ -70,9 +71,9 @@ function style(){
 		$("#sectionContainer3").css("margin-bottom",0);
 	};
 	/*Style for video containers*/
-	var containerWidth = $("#videoContainer1").width();
+	containerWidth = $("#videoContainer1").width();
 	$('#videoContainer1').css("height",containerWidth*3/4);
-	var containerWidth = $("#videoContainer2").width();
+	containerWidth = $("#videoContainer2").width();
 	$('#videoContainer2').css("height",containerWidth*3/4);
 	//Style for video container and text 1
 	containerHeight = $("#videoContainer1").height();
@@ -118,7 +119,7 @@ function style(){
 	/*STYLE FOR LEADERSHIP*/
 	//FIRST CONTAINER
 	containerWidth = $('#mainLeaderContainer').width();
-	var factor = containerWidth/1351;
+	factor = containerWidth/1351;
 	$('#mainLeaderContainer').css("margin-top",150*factor);
 	$('#footerLeader').css("margin-top",150*factor);
 	$('#leaderContainer1').css({"transition": "none","-webkit-transition": "none"});
@@ -187,6 +188,9 @@ function style(){
 		$("#textDesc2").css({"padding-left": 40/factor, "padding-right": 40/factor});	
 		$("#textDesc3").css({"padding-left": 40/factor, "padding-right": 40/factor});	
 	}
+	$("#specContainer").css("width",$(window).width());
+	$("#imgSpec").css("width",$(window).width());
+	$("#imgSpec").css("height",$(window).width()*9/16);
 };
 $(window).load(function(){  
 	$(document).ready(style);
@@ -226,7 +230,11 @@ $( "#targetSpec" ).click(function() {
 			$('#imgSpec').css("margin-top",itemHeight*.025);
 			var itemWidth = $("#imgSpec").width();
 			$('#imgSpec').css("width",itemWidth+2*tempDiff-itemHeight*.05);
-		}		
+		}
+		containerHeight = $("#specContainer").height();
+		itemHeight = $("#specText").height();
+		var factor = containerHeight/705;
+		$("#specText").css("margin-top",(containerHeight-itemHeight)/2+6*factor);
 	});
 });
 
