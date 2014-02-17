@@ -330,7 +330,7 @@ ul#navmenu li:hover .sub1{
     width: 60px;
     display: none;
     position: absolute;
-	opacity: 0.2;
+	opacity: 0.5;
     z-index: 1;
     cursor: pointer;
     color: #FFF;
