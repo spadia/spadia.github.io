@@ -6,7 +6,7 @@ $("#dummyDiv1").mouseover(function(){
 	var tempMargin = 8*factor;
 	$("#name"+id).css("margin-bottom",tempMargin);
 	$("#name"+id).css("font-size",25*factor);
-	$("#blueDivText"+id).css("font-size",25*factor);
+	$("#blueDivText"+id).css("font-size",22*factor);
 	var containerHeight = $('#leaderContainer'+id).height();
 	var itemHeight = $('#name'+id).height()+$("#nameDesc"+id).height()+tempMargin;
 	$('#leaderDiv'+id).css({"transition": "all 0.2s ease-in-out","-webkit-transition": "all 0.2s ease-in-out;"});
@@ -42,7 +42,7 @@ $("#dummyDiv2").mouseover(function(){
 	var tempMargin = 8*factor;
 	$("#name"+id).css("margin-bottom",tempMargin);
 	$("#name"+id).css("font-size",25*factor);
-	$("#blueDivText"+id).css("font-size",25*factor);
+	$("#blueDivText"+id).css("font-size",22*factor);
 	var containerHeight = $('#leaderContainer'+id).height();
 	var itemHeight = $('#name'+id).height()+$("#nameDesc"+id).height()+tempMargin;
 	$('#leaderDiv'+id).css({"transition": "all 0.2s ease-in-out","-webkit-transition": "all 0.2s ease-in-out;"});
@@ -78,7 +78,7 @@ $("#dummyDiv3").mouseover(function(){
 	var tempMargin = 8*factor;
 	$("#name"+id).css("margin-bottom",tempMargin);
 	$("#name"+id).css("font-size",25*factor);
-	$("#blueDivText"+id).css("font-size",25*factor);
+	$("#blueDivText"+id).css("font-size",22*factor);
 	var containerHeight = $('#leaderContainer'+id).height();
 	var itemHeight = $('#name'+id).height()+$("#nameDesc"+id).height()+tempMargin;
 	$('#leaderDiv'+id).css({"transition": "all 0.2s ease-in-out","-webkit-transition": "all 0.2s ease-in-out;"});
