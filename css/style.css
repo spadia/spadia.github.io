@@ -1,0 +1,773 @@
+/***********************************
+Author: Eduardo López Arce Vivas
+email: eduardo.lopezarce@gmail.com
+***********************************/
+/*IMPORT GOOGLE FONTS*/
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+/********GENERAL RULES********/
+/* rules for all index*/
+*{
+	font-family: 'Open Sans', sans-serif;
+	margin:0px auto;
+	padding: 0px;
+	font-family: Helvetica, arial, sans-serif;
+}
+/* Define height as 100*/
+html, body {
+	height:100%;
+}
+/* rules for body*/
+body{
+	font-family: 'Open Sans', sans-serif;
+	text-align:center;
+}
+/* rules for Anchor*/
+a{
+	font-family: 'Open Sans', sans-serif;
+	text-decoration: none;
+	outline:none;
+}
+/**********Rules for div while image is loading***********/
+#hideAll{
+   position: fixed;
+   left: 0px; 
+   right: 0px; 
+   top: 0px; 
+   bottom: 0px; 
+   width:100%;
+   background-color: #030303;
+   z-index: 99; /* Higher than anything else in the document */
+}
+#hideAll #imgLoad{
+	width:20%;
+	margin: 0 auto;
+	position: relative;
+	z-index: 99;
+}
+
+/********RULES FOR TABLE WITH MENU CONTENT********/
+#tabmenu{
+	text-align:center;	
+	width: 100%;
+	padding: 0;
+	background-color: rgb(3,3,3);
+	position: fixed;
+	z-index: 3;
+}
+/********RULES FOR LOGO********/
+/* rules for logo*/
+.logo {
+	width: 150px;
+	text-align: center;
+	margin: auto;
+	padding: auto;
+}
+/* rules for logo IMAGE*/
+.logo img{
+	width: 100%;
+}
+/********RULES FOR NAVIGATION MENU********/
+/* rules for all UNORDERED lists*/
+ul#navmenu, ul.sub1{
+	list-style-type:none;
+	/*outline: 1px solid red;*/
+}
+/* rules for MAIN LIST item*/
+ul#navmenu li{
+	/*border: 1px solid red;*/
+	position: relative; /*very important step*/
+	z-index: 3;
+	float: right;
+	margin-right: 1%;
+	margin-bottom: -20px;
+}
+/* rules for MAIN ANCHOR element*/
+ul#navmenu a{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+	display: block;
+	color: #ddd;/*#002F64;*/
+	text-align: center;		
+	margin: 20px 0px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+}
+/* rules for ALL ANCHOR element -> MAIN LI hover*/
+ul#navmenu li:hover >a{
+	color: #00A8CB;
+}
+/* rules for SUB unordered lists*/
+ul#navmenu ul.sub1{
+	margin-top: -5px;
+	display: none;
+	position: absolute;
+	z-index: 3;
+	width: 200px;
+	left: auto;
+	right: auto;	
+	margin-left: -50px;
+	background-color: #030303;
+}
+ul#navmenu ul.sub1:after{
+	content:'';
+	display:block;
+	position:absolute;
+	top:-20px;
+	left: 80px;
+	width:0;
+	height:0;
+	border-color: transparent transparent #030303 transparent; /*border color should be same as div div background color*/
+	border-style: solid;
+	border-width: 10px;
+}
+/* rules for SUB LIST item*/
+ul#navmenu .sub1 li{
+	width: 100%;
+	/**border: 1px solid green;*/
+}
+/* rules for SUB ANCHOR element*/
+ul#navmenu .sub1 a{
+	padding-left: 0px;
+	padding-right: 0px;
+	color: #ddd;
+	width: 100%;
+	margin: 5px auto;
+}
+/* rules for ALL SUB elements -> MAIN LI hover*/
+ul#navmenu li:hover .sub1{
+	display: block;
+}
+/**********RULES FOR FLAGS**********/
+#flags{
+	margin: auto;
+	padding-top: 10px;	
+}
+#flags img{
+	margin: 0 2px;
+}
+#flags a span{
+	display:none;
+} 
+/***************Rules for main section********************/
+/*dummy div to add padding*/
+#paddingMenu{
+	height: 61px;
+	position: relative;
+	z-index:2;
+	width: 100%;
+}
+/*Main container*/
+.mainContainer{
+	width: 100%;
+	margin: 0 auto;
+}
+/*Main container with text*/
+.mainContainer .mainText{
+	position: absolute;
+	z-index: 1;
+	text-align: center;
+}
+.mainContainer #mainText1{
+	margin-left: 45%;	
+	width: 50%;
+}
+.mainContainer #mainText2{
+	text-align: left;
+	margin-left: 83%;
+	width: 16%;
+}
+.mainContainer #mainText2 .p1{
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 30px;
+	color: #333;
+}
+.mainContainer #mainText3{
+	width: 50%;	
+	margin-left: 5%;
+}
+ .mainContainer #sectionText1,  #sectionText2, #sectionText3{
+ 	width: 50%;
+ 	margin-left: 5%;
+ 	text-align: left;
+ }
+.mainContainer .mainText .p1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 40px;
+	color: #00b8db;
+	margin-bottom: 10px;
+}
+.mainContainer .mainText .p2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	line-height: 200%;
+}
+.mainContainer #mainText1 .p2, #mainText3 .p2{
+	color: #ddd;
+}
+.mainContainer #sectionText1 .p2, #sectionText2 .p2, #sectionText3 .p2{
+	color: #333;
+}
+/*Main container with logo*/
+.mainContainer #logoHD{
+	position: absolute;
+	z-index: 1;
+	width: 20%;
+	margin-left: 40%;
+}
+/*Main container with image as background*/
+.mainContainer .backgd{
+	position: relative;
+	width: 100%;
+	z-index:-1;
+}
+/*rules for button*/
+.button{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	position: relative;
+	color: #fff;
+	margin: 20px 0px;
+	line-height: 400%;
+	padding: 15px 25px;
+	background-color: #00A8CB;
+	z-index: 1;
+}
+.button:hover{
+	background-color: #00b8db;
+}
+/*Rules for span to specification subsection*/
+#targetSpec{
+	position: absolute;
+	z-index: 2;
+	left: 0px;
+	cursor: pointer;
+	background-color: transparent;
+	float: left;
+	margin-left: 10%;
+	width: 54%;
+}
+/*Rules for second image to use on hover for specification subsection*/
+#backgdSpec{
+	position: absolute;
+	display: none;
+	opacity: 0;
+	z-index: 0;
+}
+/*Rules for third image to use on click for specification subsection*/
+#backgdSpecClick{
+	position: absolute;
+	display: none;
+	opacity: 0;
+	z-index: 0;	
+}
+/*Rules for specification subsection*/
+#specContainer{
+	position: fixed;
+	color: red;
+	width: 100%;
+	height: 100%;
+	background: rgba(03,03,03,0.9);
+	z-index: 99;
+}
+/*Rules for specifications text*/
+#specContainer #specText{
+	color: #ddd;
+	position: absolute;
+	left: 0px;
+	text-align: right;
+	float: left;
+	font-family: 'Open Sans', sans-serif;
+	line-height: 200%;
+}
+/*Rules for icon to close specification subsection*/
+#closeIcon{
+	background: transparent;
+	position: fixed;
+	z-index: 100; /* Higher than anything else in the document */
+	cursor: pointer;
+	right:0px;
+	top:0px;
+	margin-top: 1%;
+	margin-right: 2%;
+	font-size: 50px;
+	color: #ccc;
+}
+/*Rules for icon to close specification subsection*/
+#closeIcon:hover{
+	color: #00A8CB;
+}
+/**********RULES FOR SLIDER IN SECTION MUSCLE**************/
+.slides {
+    padding: 0;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+.slides input { 
+	display: none; 
+}
+.slide-container { 
+	display: block; 
+}
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 100%;
+    display: block;
+    position: absolute;
+
+    transform: scale(0);
+
+    transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+.slide img {
+    width: 100%;
+}
+.nav label {
+    width: 60px;
+    display: none;
+    position: absolute;
+	opacity: 0.5;
+    z-index: 1;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 100px;
+    text-align: center;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .2);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+.nav label:hover { 
+	opacity: 1; 
+}
+.nav .next { 
+	right: 0; 
+}
+input:checked + .slide-container  .slide {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+    -webkit-transition: opacity 1s ease-in-out;
+}
+input:checked + .slide-container .nav label { 
+	display: block; 
+}
+/****************MULTIMEDIA SECTION***********/
+/*Main container*/
+.mainVideo{
+	width: 100%;
+	margin: 50px auto;
+}
+/*Rules for video container*/
+.mainVideo .videoContainer{
+	width:45%;
+	float: left;
+	margin-left: 2%;
+}
+/*Rules for text in video container*/
+.mainVideo .videoText{
+	text-align: left;
+	width: 50%;
+	margin-right: 1%;
+	float:right;
+}
+.mainVideo .videoText .p1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 35px;
+	color: #00b8db;
+	margin-bottom: 10px;
+}
+.mainVideo .videoText .p2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18px;
+	line-height: 150%;
+}
+/***********RULES FOR ABOUT SECTIONS*************/
+.mainContainer #contactText{
+	margin: 45px 7%;
+	margin-bottom: 55px;
+	width: 85%;
+}
+@media screen and (min-width: 875px){
+	.mainContainer #contactText{
+		width: 45%;
+	}
+}
+#contactText .p1{
+	font-family: 'Open Sans', sans-serif;
+	text-align: left;
+	color: #333;
+	font-size: 40px;
+	margin-bottom: 15px;
+}
+#contactText .p2{
+	font-family: 'Open Sans', sans-serif;
+	text-align: justify;
+	color: #777;
+	font-size: 15px;
+}
+#contactText a{
+	color: #00A8CB;
+}
+/************RULES FOR LEADERSHIP SECTION***********/
+.mainLeaderContainer{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+}
+.leaderContainer{
+	width: 25%;
+	margin: 2%;
+	margin-bottom: 0px;
+	padding: 0px;
+	position: relative;
+	display: inline-block;
+}
+.leaderContainer span{
+	left: 0px;
+	top: 0px;
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+}
+.leaderContainer .blueDiv{
+	background: rgba(0,168,203,0.7);
+	position: absolute;
+	width: 100%;
+	height: 0px;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	opacity: 0;	
+}
+.leaderContainer .blueDiv .blueDivText{
+	transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	font-family: 'Montserrat', sans-serif;
+}
+.leaderContainer .leaderDiv{
+	top: 0px;
+	left: 0px;
+	position: absolute;
+	background: #030303;
+	color: #ddd;
+	width: 100%;
+	z-index: 1;
+}
+.leaderContainer .dummyDiv{
+	width: 100%;
+	position: absolute;
+	z-index: 2;
+	cursor: pointer;
+}
+.leaderContainer img{
+	width: 100%;
+}
+.leaderDiv .p1{	
+	font-family: 'Open Sans', sans-serif;	
+	font-size: 25px;
+}
+.leaderDiv .p2{	
+	font-family: 'Open Sans', sans-serif;	
+	font-size: 13px;
+	display: none;
+	color: #ddd;
+	opacity: 0;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+#invisible{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	z-index: 50;
+	background-color: transparent;
+	display:none;
+}
+.leaderDesc{
+	margin: 0px auto;
+	margin-left: 0px;
+	background-color: #030303;
+	display: none;
+	position: relative;
+	height: 0px;
+}
+.leaderDesc .p2{
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;	
+	line-height: 180%;
+	color: #ddd;
+}
+/*Arrow that points up*/
+#arrowUp {
+	width: 0; 
+	height: 0; 
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid #030303;
+	z-index:2;	
+	display: none;
+}
+/***********RULES FOR FOOTER**************/
+/* rules for all content in footer */
+.footer{
+	margin: 0px auto;
+	padding-top: 40px;
+	width: 100%;
+	background-color: rgba(3,3,3,0.9);
+	color: #FFF;
+	text-align: left;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+}
+/* rules for heading in footer */
+.footer .title{
+	margin-left: 20%;
+	padding-bottom: 10px;
+	font-size:14px;
+}
+/* rules for subheading in footer */
+.footer p{
+	margin-left: 20%;
+	padding-bottom: 5px;
+}
+/* rules for subheading elements in footer */
+.footer a{
+	color: rgb(198,198,198);
+}
+/* rules for subheading in footer while hover */
+.footer a:hover{
+	color: #fff;
+}
+/****************RULES FOR SUBFOOTER************/
+.subfooter{
+	margin: 0px auto;
+	width: 100%;
+	height: 50px;
+	text-align: right;
+	padding-bottom: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	background-color: rgba(3,3,3,0.9);
+	color: #FFF;
+}
+/*************SOCIAL MEDIA***************/
+.facebook{
+	width: 48px;
+	height:48px;
+	display: inline-block;
+    *display: inline;
+}
+.facebook img{
+	position: absolute;
+}
+.facebook #facebook{
+	opacity: 0;
+}
+.youtube{
+	width: 48px;
+	height:48px;
+	display: inline-block;
+    *display: inline;
+}
+.youtube img{
+	position: absolute;
+}
+.youtube #youtube{
+	opacity: 0;
+}
+.linkedin{
+	width: 48px;
+	height:48px;
+	display: inline-block;
+    *display: inline;
+}
+.linkedin img{
+	position: absolute;	
+}
+.linkedin #linkedin{
+	opacity: 0;
+}
+.twitter{
+	width: 48px;
+	height:48px;
+	display: inline-block;
+    *display: inline;
+}
+.twitter img{
+	position: absolute;
+}
+.twitter #twitter{
+	opacity: 0;
+}
+@media screen and (max-width: 875px) and (min-width: 811px){
+	#flags{
+		margin: 0px;
+		padding-top: 10px;	
+	}
+	#flags img{
+		margin: 0px;
+	}
+}
+@media screen and (max-width: 811px) and (min-width: 0px){
+	#flags{
+		margin: 0px;
+		margin-top: -28px;
+		padding:0px;	
+	}
+	#flags img{
+		margin: 0px;
+		padding: 0px;
+		display: block;
+		margin-bottom: 2px;
+	}
+	.mainContainer .mainText .p1{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 35px;
+		color: #00b8db;
+		margin-bottom: 10px;
+	}
+	.mainContainer .mainText .p2{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 15px;
+		line-height: 200%;
+	}
+	.button{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 15px;
+		padding: 10px 20px;
+		line-height: 200%;
+	}
+}
+@media screen and (max-width: 630px) and (min-width: 0px){
+	/********RULES FOR TABLE WITH MENU CONTENT********/
+	#tabmenu{
+		width: 630px;
+		position: relative;
+	}
+	/* rules for MAIN LIST item*/
+	ul#navmenu li{
+		/*border: 1px solid red;*/
+		position: relative; /*very important step*/
+		float: right;
+		margin-right: 1%;
+		margin-bottom: -20px;
+	}
+	/***************Rules for main section********************/
+	/*dummy div to add padding*/
+	#paddingMenu{
+		height: 0px;
+		width: 630px;
+	}
+	/*Main container*/
+	.mainContainer{
+		width: 630px;
+	}
+	.mainContainer #mainText1{
+		margin-left: 300px;	
+		width: 315px;
+	}
+	.mainContainer #mainText2{
+		margin-left: 522px;	
+		width: 101px;
+	}
+	.mainContainer #mainText3{
+		width: 315px;
+		margin-left: 15px;
+	}
+	.mainContainer #sectionText1,  #sectionText2, #sectionText3{
+	 	width: 315px;
+	 	margin-left: 15px;
+	 }
+	/*Main container with logo*/
+	.mainContainer #logoHD{
+		position: absolute;
+		z-index: 1;
+		width: 126px;
+		margin-left: 252px;
+	}
+	/*Main container with image as background*/
+	.mainContainer .backgd{
+		width: 630px;
+	}
+	/*Rules for icon to close specification subsection*/
+	#closeIcon{
+		font-size: 40px;
+		margin-top: 10px;
+		margin-right: 10px;
+	}
+	/*Rules for span to specification subsection*/
+	#targetSpec{
+		margin-left: 63px;
+		width: 340px;
+	}
+	/**********RULES FOR SLIDER IN SECTION MUSCLE**************/
+	.slides {
+	    width: 630px;
+	}
+	/****************MULTIMEDIA SECTION***********/
+	/*Main container*/
+	.mainVideo{
+		width: 630px;
+		margin: 40px auto;
+	}
+	.mainVideo .videoText .p1{
+		font-size: 30px;
+		margin-bottom: 7px;
+	}
+	.mainVideo .videoText .p2{
+		font-size: 15px;
+	}
+	/************RULES FOR LEADERSHIP SECTION***********/
+	.mainLeaderContainer{
+		width: 630px;
+	}
+	.leaderContainer{
+		width: 157px;
+		margin: 12px;
+		margin-bottom: 0px;
+	}
+	#arrowDiv{
+		width: 630px;
+	}
+	/***********RULES FOR ABOUT SECTIONS*************/
+	/*.mainContainer #contactText{
+		margin: 45px 5%;
+		width: 90%;
+	}*/
+	/***********RULES FOR FOOTER**************/
+	/* rules for all content in footer */
+	.footer{
+		width: 630px;
+	}
+	/* rules for heading in footer */
+	.footer .title{
+		margin-left: 80px;
+	}
+	/* rules for subheading in footer */
+	.footer p{
+		margin-left: 80px;
+	}
+	/****************RULES FOR SUBFOOTER************/
+	.subfooter{
+		width: 630px;
+	}
+}
