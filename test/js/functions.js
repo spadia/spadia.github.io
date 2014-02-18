@@ -110,6 +110,10 @@ function style(){
 	$('#next3').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
 	$('#prev4').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
 	$('#next4').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
+	$('#prev5').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
+	$('#next5').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
+	$('#prev6').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
+	$('#next6').css({'padding-top':tempDiff, 'padding-bottom':tempDiff});
 	/*STYLE FOR LEADERSHIP*/
 	//FIRST CONTAINER
 	containerWidth = $('#mainLeaderContainer').width();
@@ -182,7 +186,7 @@ function style(){
 		$("#textDesc2").css({"padding-left": 40/factor, "padding-right": 40/factor});	
 		$("#textDesc3").css({"padding-left": 40/factor, "padding-right": 40/factor});	
 	}
-	
+
 		/*Style for container with specifications*/
 		var containerHeight = $("#specContainer").height();
 		var itemHeight = $("#imgSpec").height();
