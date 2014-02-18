@@ -197,7 +197,7 @@ function style(){
 		//Container with specifications text
 		var containerWidth = $("#specContainer").width();
 		var factor = containerWidth/1351;
-		$("#specText").css("font-size",20*factor);
+		$("#specText").css("font-size",19*factor);
 		$("#specText").css("margin-left",10*factor);
 		$("#specText").css("width",300*factor);
 		containerHeight = $("#specContainer").height();
@@ -245,7 +245,7 @@ $( "#targetSpec" ).click(function() {
 		//Container with specifications text
 		var containerWidth = $("#specContainer").width();
 		var factor = containerWidth/1351;
-		$("#specText").css("font-size",20*factor);
+		$("#specText").css("font-size",19*factor);;
 		$("#specText").css("margin-left",10*factor);
 		$("#specText").css("width",300*factor);
 		containerHeight = $("#specContainer").height();
