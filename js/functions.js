@@ -69,6 +69,10 @@ function style(){
 	$('#videoContainer1').css("height",containerWidth*3/4);
 	containerWidth = $("#videoContainer2").width();
 	$('#videoContainer2').css("height",containerWidth*3/4);
+	containerWidth = $("#videoContainer3").width();
+	$('#videoContainer3').css("height",containerWidth*3/4);
+	containerWidth = $("#videoContainer4").width();
+	$('#videoContainer4').css("height",containerWidth*3/4);
 	//Style for video container and text 1
 	containerHeight = $("#videoContainer1").height();
 	itemHeight = $('#videoText1').height();
@@ -94,6 +98,32 @@ function style(){
 		$('#mainVideo2').css("height",itemHeight);
 		$('#videoContainer2').css("margin-top",Math.round(-tempDiff/2));
 		$('#videoText2').css("margin-top",0);
+	}
+	//Style for video container and text 3
+	containerHeight = $("#videoContainer3").height();
+	itemHeight = $('#videoText3').height();
+	tempDiff = containerHeight - itemHeight;
+	if(tempDiff > 0){
+		$('#mainVideo3').css("height",containerHeight);	
+		$('#videoText3').css("margin-top",Math.round(tempDiff/2));
+		$('#videoContainer3').css("margin-top",0);
+	}else{
+		$('#mainVideo3').css("height",itemHeight);
+		$('#videoContainer3').css("margin-top",Math.round(-tempDiff/2));
+		$('#videoText3').css("margin-top",0);
+	}
+	//Style for video container and text 4
+	containerHeight = $("#videoContainer4").height();
+	itemHeight = $('#videoText4').height();
+	tempDiff = containerHeight - itemHeight;
+	if(tempDiff > 0){
+		$('#mainVideo4').css("height",containerHeight);	
+		$('#videoText4').css("margin-top",Math.round(tempDiff/2));
+		$('#videoContainer4').css("margin-top",0);
+	}else{
+		$('#mainVideo4').css("height",itemHeight);
+		$('#videoContainer4').css("margin-top",Math.round(-tempDiff/2));
+		$('#videoText4').css("margin-top",0);
 	}
 	/*Style for slider*/
 	//Main container
@@ -130,7 +160,7 @@ function style(){
 	//Text inside first container
 	factor = containerWidth/337;
 	$("#name1").css("font-size",25*factor);
-	$("#nameDesc1").css("font-size",13*factor);
+	$("#nameDesc1").css("font-size",17*factor);
 	//SECOND CONTAINER
 	$('#leaderContainer2').css({"transition": "none","-webkit-transition": "none"});
 	containerWidth = $('#leaderContainer2').width();
@@ -142,7 +172,7 @@ function style(){
 	//Text inside first container
 	factor = containerWidth/337;
 	$("#name2").css("font-size",25*factor);
-	$("#nameDesc2").css("font-size",13*factor);
+	$("#nameDesc2").css("font-size",17*factor);
 	//THIRD CONTAINER
 	$('#leaderContainer3').css({"transition": "none","-webkit-transition": "none"});
 	containerWidth = $('#leaderContainer3').width();
@@ -154,7 +184,7 @@ function style(){
 	//Text inside first container
 	factor = containerWidth/337;
 	$("#name3").css("font-size",25*factor);
-	$("#nameDesc3").css("font-size",13*factor);
+	$("#nameDesc3").css("font-size",15*factor);
 	// protect containers of animations
 	$("#leaderContainer1").css('left','auto');
 	$("#leaderContainer2").css('left','auto');
