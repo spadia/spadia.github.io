@@ -1,0 +1,2 @@
+cmd:
+iisreset /stop
