@@ -214,8 +214,8 @@ ul#navmenu li:hover .sub1{
 .mainContainer #logoHD{
 	position: absolute;
 	z-index: 1;
-	width: 20%;
-	margin-left: 40%;
+	width: 30%;
+	margin-left: 10%;
 }
 /*Main container with image as background*/
 .mainContainer .backgd{
