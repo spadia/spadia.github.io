@@ -84,7 +84,7 @@ ul#navmenu li{
 /* rules for MAIN ANCHOR element*/
 ul#navmenu a{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
+	font-size: 16px;
 	text-decoration: none;
 	display: block;
 	color: #ddd;/*#002F64;*/
