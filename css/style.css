@@ -170,8 +170,8 @@ ul#navmenu li:hover .sub1{
 	text-align: center;
 }
 .mainContainer #mainText1{
-	margin-left: 45%;	
-	width: 50%;
+	margin-left: 55%;	
+	width: 40%;
 }
 .mainContainer #mainText2{
 	text-align: left;
@@ -215,7 +215,7 @@ ul#navmenu li:hover .sub1{
 	position: absolute;
 	z-index: 1;
 	width: 30%;
-	margin-left: 10%;
+	margin-left: 60%;
 }
 /*Main container with image as background*/
 .mainContainer .backgd{
