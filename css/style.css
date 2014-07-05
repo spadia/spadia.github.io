@@ -204,7 +204,7 @@ ul#navmenu li:hover .sub1{
 	font-size: 20px;
 	line-height: 200%;
 }
-.mainContainer #mainText1 .p2, #mainText3 .p2{
+.mainContainer #mainText1 .p2{
 	color: #ddd;
 }
 .mainContainer #sectionText1 .p2, #sectionText2 .p2, #sectionText3 .p2{
@@ -246,8 +246,8 @@ ul#navmenu li:hover .sub1{
 	cursor: pointer;
 	background-color: transparent;
 	float: left;
-	margin-left: 10%;
-	width: 54%;
+	margin-left: 33%;
+	width: 40%;
 }
 /*Rules for second image to use on hover for specification subsection*/
 #backgdSpec{
