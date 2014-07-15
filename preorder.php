@@ -17,13 +17,10 @@ email: eduardo.lopezarce@gmail.com
         <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
         <!--========START TITLE========-->    
         <title>
-            Spadia Engineering  | Preorder
+            Spadia Engineering  | Pre-order
         </title>
         <!--========LINK TO CSS STYLESHEET========-->
         <link rel="stylesheet" href="css/style.css">
-        <style>
-            .error {color: #FF0000;}
-        </style>
         <!--==========LINK TO GOOGLE FONTS==============-->
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <!--========CALL JQUERY, JQUERY UI AND JQUERY FILES========-->  
@@ -70,9 +67,10 @@ email: eduardo.lopezarce@gmail.com
             // define variables and set to empty values
             $nameErr = $emailErr = $genderErr = $countryErr = "";
             $name = $email = $gender = $comment = $country = "";
-            $dataErr = 0;
+            $dataErr = 1;
 
             if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                $dataErr = 0;
                 if (empty($_POST["name"])) {
                     $nameErr = "Name is required";
                     $dataErr = 1;
@@ -158,7 +156,6 @@ email: eduardo.lopezarce@gmail.com
                     <div class = "p2">Comments: </div><textarea style = "vertical-align: top;"name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
                     <br/><br><br><br><br>
                     <div class = "p2" style = "text-align: left; float: left;"><input type="submit" name="submit" value="Submit"> </div>
-
                 </form>
             </div>
         </div>
@@ -167,24 +164,16 @@ email: eduardo.lopezarce@gmail.com
 
 
 <?php
-    echo "<h2>Your Input:</h2>";
-    echo $name;
-    echo "<br>";
-    echo $email;
-    echo "<br>";
-    echo $comment;
-    echo "<br>";
-    echo $gender;
-    echo "<br>";
-    echo $country; 
-    echo "<br>"; 
-    echo $dataErr;
-    if ($dataErr == 1){
-        $message = "Invalid data";  
-    }else{
-        $message = "Data saved";
+    if ($dataErr == 0){
+        $connect = 0;
+        include 'php/connect.php';
+        if ($connect == 1){
+            include 'php/insert.php';
+            insert($name, $email, $comment, $gender, $country);     
+        }else{
+            echo "<script type='text/javascript'>alert('Did not connect with database');</script>";
+        }
     }
-    echo "<script type='text/javascript'>alert('$message');</script>";
 ?>
         <!--============SUBFOOTER===========-->
         <div class = "subfooter" width ="100%">
