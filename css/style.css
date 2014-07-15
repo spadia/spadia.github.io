@@ -27,6 +27,10 @@ a{
 	text-decoration: none;
 	outline:none;
 }
+textarea{
+	text-align: left;
+	float: left;
+}
 /**********Rules for div while image is loading***********/
 #hideAll{
    position: fixed;
