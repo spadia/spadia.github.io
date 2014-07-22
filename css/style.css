@@ -143,17 +143,20 @@ ul#navmenu .sub1 a{
 ul#navmenu li:hover .sub1{
 	display: block;
 }
-/**********RULES FOR FLAGS**********/
-#flags{
-	margin: auto;
-	padding-top: 10px;	
+/**********RULES FOR PREORDER**********/
+/* rules for preorder button */
+.preorder{
+	color: #eee;
+	background-color: #00a8cb;
+	padding: 19px 0px;
+	float: right;
+	width: 100%;
 }
-#flags img{
-	margin: 0 2px;
+/* rules for preorder button on hover */
+.preorder:hover{
+	color: #eee;
+	background-color: #00b8db;
 }
-#flags a span{
-	display:none;
-} 
 /***************Rules for main section********************/
 /*dummy div to add padding*/
 #paddingMenu{
@@ -706,7 +709,7 @@ input:checked + .slide-container .nav label {
 		position: absolute;
 		z-index: 1;
 		width: 126px;
-		margin-left: 252px;
+		margin-left: 400px;
 	}
 	/*Main container with image as background*/
 	.mainContainer .backgd{

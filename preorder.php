@@ -48,13 +48,14 @@ email: eduardo.lopezarce@gmail.com
             <a href="index.html"><img src="images/logo.png" title="Home" alt="Home" ></a>
           </div></td><!--END LOGO-->
           <!--========TOP MENU========-->
-          <td width ="72%" valign="center"><ul id ="navmenu">
+          <td width ="65%" valign="center"><ul id ="navmenu">
             <li><a href="awards.html">Awards & Publications</a></li>
             <li><a href="contact.html">Contact Us</a></li>
           </ul></td><!--END TOP MENU-->
-          <!--========FLAGS========-->
-          <td width ="5%" valign="center"><div id ="flags" align="right" style="height: 30px;">
-          </div></td><!--END FLAGS-->
+            <!--=======PRE-ORDER BUTTON=====-->
+            <td width ="15%" valign="center"><ul>
+                <li><a class = "preorder" href = "preorder.php">Pre-order now!</a>
+            </ul></td><!--END PRE-ORDER BUTTON-->
         </tr></table><!--END LOGO AND TOP MENU-->
 
         <!--============MAIN CONTENT===============-->
