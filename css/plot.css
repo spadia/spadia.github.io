@@ -1,0 +1,122 @@
+/***********************************
+Author: Eduardo López Arce Vivas
+email: eduardo.lopezarce@gmail.com
+***********************************/
+body{
+	background: url("http://3.bp.blogspot.com/-rcPvQVRag30/TlG_if8S0oI/AAAAAAAABB0/IUZiVHLwphw/s1600/EEG%2B49A.JPG"); 
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
+    background: white;
+}
+button {
+	font-size: 18px;
+	padding: 1px 7px;
+}
+
+input {
+	font-size: 18px;
+}
+
+input[type=checkbox] {
+	margin: 7px;
+}
+
+#header {
+	position: relative;
+	width: 900px;
+	margin: 0;
+}
+
+#header h2 {
+	margin-left: 10px;
+	vertical-align: middle;
+	font-size: 42px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+}
+
+#content {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px;
+}
+
+#footer {
+	margin-top: 25px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: 12px;
+	color: #999;
+}
+
+.demo-container {
+	box-sizing: border-box;
+	width: 100%;
+	height: 600px;
+	padding: 20px 15px 15px 15px;
+	margin: 0;
+	background: #fff;
+	/*
+	background: linear-gradient(#ccc 0, #fff 600px);
+	background: -o-linear-gradient(#ccc 0, #fff 600px);
+	background: -ms-linear-gradient(#ccc 0, #fff 600px);
+	background: -moz-linear-gradient(#ccc 0, #fff 600px);
+	background: -webkit-linear-gradient(#ccc 0, #fff 600px);*/
+}
+
+.demo-placeholder {
+	width: 100%;
+	height: 500px;
+	font-size: 14px;
+	line-height: 1.2em;
+	float: left;
+	margin-top: 12px;
+}
+
+.legend table {
+	border-spacing: 5px;
+}
+
+.graphText{
+	font-family: 'Open Sans', sans-serif;
+	margin-top: -150px;
+}
+
+.graphText .p1{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 40px;
+	color: #00b8db;
+	margin-bottom: 10px;
+}
+
+.graphText .p2{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	line-height: 200%;
+	color: #333;
+}
+
+.introImg{
+	width: 48px;
+	height:48px;
+	display: inline-block;
+    *display: inline;
+    margin-right: 50px;
+}
+.introImg img{
+	position: absolute;	
+}
+.introImg #intro21, #intro31, #intro41{
+	opacity: 0;
+}
+
+#textIntro1{
+	height: 0;
+}
+
+#textIntro2, #textIntro3, #textIntro4{
+	height: 0;
+	opacity: 0;
+}

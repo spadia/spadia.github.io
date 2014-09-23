@@ -66,9 +66,18 @@ textarea{
 	margin: auto;
 	padding: auto;
 }
+.logo #logo_text{
+	color: #bbb;
+	font-size: 35px;
+	display: inline-block;
+	position: absolute;
+	top: 11px;
+	font-family: 'Open Sans', sans-serif;
+}
 /* rules for logo IMAGE*/
 .logo img{
-	width: 100%;
+	margin-right: 3px;
+	width: 45px;
 }
 /********RULES FOR NAVIGATION MENU********/
 /* rules for all UNORDERED lists*/
@@ -100,7 +109,7 @@ ul#navmenu a{
 }
 /* rules for ALL ANCHOR element -> MAIN LI hover*/
 ul#navmenu li:hover >a{
-	color: #00A8CB;
+	color: #fff;
 }
 /* rules for SUB unordered lists*/
 ul#navmenu ul.sub1{
@@ -381,15 +390,15 @@ input:checked + .slide-container .nav label {
 /*Rules for video container*/
 .mainVideo .videoContainer{
 	width:45%;
-	float: left;
-	margin-left: 2%;
+	float: right;
+	margin-right: 2%;
 }
 /*Rules for text in video container*/
 .mainVideo .videoText{
 	text-align: left;
-	width: 50%;
-	margin-right: 1%;
-	float:right;
+	width: 45%;
+	margin-left: 5%;
+	float: left;
 }
 .mainVideo .videoText .p1{
 	font-family: 'Open Sans', sans-serif;
@@ -567,13 +576,14 @@ input:checked + .slide-container .nav label {
 /****************RULES FOR SUBFOOTER************/
 .subfooter{
 	margin: 0px auto;
+	margin-top: -4px;
 	width: 100%;
 	text-align: center;
 	padding-bottom: 10px;
 	padding: 20px 0;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
-	background-color: rgba(3,3,3,0.9);
+	background-color: rgb(3,3,3);
 	color: #FFF;
 }
 /*************SOCIAL MEDIA***************/

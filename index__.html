@@ -1,0 +1,147 @@
+<!--===============================
+Author: Eduardo López Arce Vivas
+email: eduardo.lopezarce@gmail.com
+================================-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--========START HTML========-->	
+<html xmlns="http://www.w3.org/1999/xhtml">	
+	<!--========START HEAD========-->		
+	<head>
+		<!--========START META========-->	
+		<meta name = "description" content="Spadia Engineering develops low cost myoelectric prostheses to help physically challenged individuals to adapt to their environment.">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<!--=========FAVICON=============--> 
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+		<!--========START TITLE========-->		
+		<title>
+			Spadia Engineering  | Experts in Human-System Interaction
+		</title>
+		<!--========LINK TO CSS STYLESHEET========-->
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<!--==========LINK TO GOOGLE FONTS==============-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<!--========CALL JQUERY, JQUERY UI AND JQUERY FILES========-->
+		<script type ="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+		<script src="google_analytics_auto.js"></script>
+	</head>
+	<!--========START BODY========-->
+	<body>
+		<div id="hideAll">
+			<img id = "imgLoad" src="images/logo.png"><br/><br/>
+			<img id = "loader"	src = "images/ajax-loader.gif">
+		</div>
+		<span style="display: none; opacity: 0;" id ="closeIcon">&#10006;</span>		
+		<div style="display: none; opacity: 0;" id = "specContainer">
+			<div id ="specText">
+				Adaptable to any person<br/>
+				Adaptable to any muscle<br/>
+				Wearable<br/>
+				Washable<br/>
+				Elastic<br/>
+				Fashionable
+			</div>
+			<img id ="imgSpec" src = "images/specHand.png"/>
+		</div>
+		<script>
+			document.getElementById("hideAll").style.display = "block";
+			var windowHeight = $(window).height();
+			var imgHeight = $("#imgLoad").height();
+			$("#hideAll").css("padding-top",Math.round(windowHeight/2)-Math.round(imgHeight/2));
+		</script>
+		<!--========LOGO, TOP MENU AND FLAGS========-->
+		<table id = "tabmenu" align="center"><tr>
+			<!--========LOGO========-->
+			<td width="15%"><div class="logo">
+				<a href="#"><img src="images/logo.png" title="Home" alt="Home" ></a>
+			</div></td><!--END LOGO-->
+			<!--========TOP MENU========-->
+			<td width ="65%" valign="center"><ul id ="navmenu">
+				<li><a href="awards.html">Awards & Publications</a></li>
+				<li><a href="contact.html">Contact Us</a></li>
+			</ul></td><!--END TOP MENU-->
+			<!--=======PRE-ORDER BUTTON=====-->
+			<td width ="15%" valign="center"><ul>
+				<li><a class = "preorder" href = "preorder.php">Pre-order now!</a>
+			</ul></td><!--END PRE-ORDER BUTTON-->
+		</tr></table><!--END LOGO AND TOP MENU-->
+
+		<!--============MAIN CONTENT===============-->
+		<div id ="paddingMenu"></div>
+		
+		<div class = "mainContainer" id = "mainContainerLogo">
+			<img id = "logoHD" src = "images/logoHD.png"/>
+			<img class="backgd" src = "images/home1.jpg"/>
+		</div>
+
+		<div class = "mainContainer" id ="mainContainer2">
+			<!--<div class ="mainText" id ="mainText2">
+				<div class ="p1" id ="p1Click">Click hand <br/>to read specifications</div>
+			</div>-->
+			<span id = "targetSpec"></span>
+			<img class="backgd" id ="backgdSpec"src = "images/Render2Wireframe2.jpg"/>
+			<img class="backgd" id ="backgdSpecClick"src = "images/Render2Wireframe3.jpg"/>
+			<img class="backgd" src = "images/Render2Wireframe1.jpg"/>
+			<!--<img class="backgd" src = "images/SpadiaRenderHand.png"/>-->
+		</div>
+
+		<div class = "mainContainer" id ="mainContainer3">
+			<div class ="mainText" id ="mainText3">
+				<div class ="p1">ZeroTouch</div>
+				<div class ="p2">
+					With a single gesture of your hand Spadia armband allows you to remotely control video games or any electronic device.
+					<br/><br/>
+					<div class = "p2" style = "color: #00a8cb; font-weight: bold;">Touchscreens days are over, now it is time for zero-touch technologies!</div>
+				</div>
+			</div>
+			<img class="backgd" src = "images/home2.jpg"/>
+		</div>
+
+		<div class = "mainContainer" id ="mainContainer1">
+			<div class ="mainText" id="mainText1"> 
+				<div class ="p1">Insight</div>
+				<div class ="p2">
+					Spadia Engineering has developed an algorithm to detect muscle activity using non-invasive technology. <br/>
+					This algorithm adapts in real-time to each particular user and muscle!
+				</div><br/>
+				<a class ="button" href="preorder.php">Pre-order now!</a>
+			</div>
+			<img class="backgd" src = "images/home4.jpg"/>
+		</div>
+		<!--END MAIN CONTENT-->
+
+		<!--============SUBFOOTER===========-->
+		<div class = "subfooter" width ="100%">
+					<p>
+						<a class="facebook"  href="https://www.facebook.com/spadia.engineering" alt="Facebook" title="Facebook">
+							<img src="images/facebook.png"/>
+							<img src="images/facebook2.png" id ="facebook"/>
+						</a>
+						<a class="youtube" href="http://www.youtube.com/channel/UCso-N4HSArLndG_XXOiJcKg" alt="Youtube" title="Youtube">
+							<img src="images/youtube.png"/>
+							<img src="images/youtube2.png" id ="youtube"/>
+						</a>
+						<a class="linkedin" href="https://www.linkedin.com/company/spadia-engineering" alt="LinkedIn" title="LinkedIn">
+							<img src="images/linkedin.png"/>
+							<img src="images/linkedin2.png" id ="linkedin"/>
+						</a>
+						<a class="twitter" href="https://twitter.com/spadiaLTD" alt="Twitter" title="Twitter">
+							<img src="images/twitter.png"/>
+							<img src="images/twitter2.png" id ="twitter"/>
+						</a>
+					</p>
+			Spadia Engineering Ltd., United Kingdom. 2014.
+		</div><!--
+
+
+			<tr><td>Developed by: <a href = "http://www.eduardolav.com" style = "color: #00a8cb;">Eduardo López Arce Vivas</a></td></tr>
+
+		END SUBFOOTER-->
+
+		<script src="js/functions.js"></script>
+
+	</body>
+</html>

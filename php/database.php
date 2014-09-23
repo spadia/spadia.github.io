@@ -20,4 +20,5 @@ while ($info = mysql_fetch_array($data)){
 	Print "<b>Country:</b> ".$info['country'] . " <br/>";
 	Print "<b>Comments:</b> ".$info['comments'] . " <br/> <br/></div>";
 }
+
 ?>
