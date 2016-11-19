@@ -1,0 +1,228 @@
+<!--===============================
+Author: Eduardo López Arce Vivas
+email: eduardo.lopezarce@gmail.com
+================================-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--========START HTML========-->	
+<html xmlns="http://www.w3.org/1999/xhtml">	
+	<!--========START HEAD========-->		
+	<head>
+		<!--========START META========-->	
+		<meta name = "description" content="Spadia Engineering develops low cost myoelectric prostheses to help physically challenged individuals to really adapt to their environment.">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />		
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<!--=========FAVICON=============--> 
+		<link rel="icon" href="../../images/favicon.ico" type="image/x-icon" />
+		<!--========START TITLE========-->		
+		<title>
+			Spadia Engineering  | Liderazgo
+		</title>
+		<!--========LINK TO CSS STYLESHEET========-->
+		<link rel="stylesheet" href="../../css/style.css">
+		<!--==========LINK TO GOOGLE FONTS==============-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<!--========CALL JQUERY, JQUERY UI AND JQUERY FILES========-->	
+		<script type ="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+		<script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+	</head>
+	<!--========START BODY========-->
+	<body>
+		<div style="display: none" id="hideAll">
+			<img id = "imgLoad" src="../../images/logo.png"><br/><br/>
+			<img id = "loader"	src = "../../images/ajax-loader.gif">
+		</div>
+		<script>
+			document.getElementById("hideAll").style.display = "block";
+			var windowHeight = $(window).height();
+			var imgHeight = $("#imgLoad").height();
+			$("#hideAll").css("padding-top",Math.round(windowHeight/2)-Math.round(imgHeight/2));
+		</script>
+		<!--========LOGO, TOP MENU AND FLAGS========-->
+		<table id = "tabmenu" align="center"><tr>
+			<!--========LOGO========-->
+			<td width="15%"><div class="logo">
+				<a href="../index/"><img src="../../images/logo.png" title="Home" alt="Home" ></a>
+			</div></td><!--END LOGO-->
+			<!--========TOP MENU========-->
+			<td width ="72%" valign="center"><ul id ="navmenu">
+				<li><a href="#" style="color: #00A8CB;">Nosotros</a>
+					<ul class="sub1">
+						<li><a href="../about/contact.html" style="margin-top: 13px;">Contacto</a></li>
+						<li><a href="../about/motivation.html" >Motivación</a></li>
+						<li><a href="../about/ethics.html">Código de Ética</a></li>
+						<li><a href="../about/leadership.html" style = "color: #00A8CB;">Liderazgo</a></li>
+						<li><a href="../about/awards.html">Reconocimientos y Publicaciones</a></li>
+						<li><a href="../about/careers.html" style="margin-bottom: 13px;">Oportunidades</a></li>
+					</ul>
+				</li>
+				<li><a href="../multimedia/">Multimedia</a></li>
+				<li><a href="../muscle/">Prótesis</a></li>
+			</ul></td><!--END TOP MENU-->		
+			<!--========FLAGS========-->
+			<td width ="12%" valign="center"><div id ="flags" align="right" style="height: 30px;">
+					<a href="../../en/about/leadership.html"><img src="../../images/en.gif" title="English" alt="English" /></a>
+					<a href="../../es/about/leadership.html"><img src="../../images/es.gif" title="Español" alt="Español"/></a>
+					<a href="../../de/about/leadership.html"><img src="../../images/de.gif" title="Deutsch" alt="Deutsch" /></a>
+			</div></td><!--END FLAGS-->
+		</tr></table><!--END LOGO AND TOP MENU-->
+
+		<!--============MAIN CONTENT===============-->
+		<div id ="paddingMenu"></div>
+
+		<div id ="invisible"></div>
+
+		<div class = "mainContainer" id ="mainContainer1">
+			<img class="backgd" src = "../../images/leadership.JPG"/>
+		</div>	
+
+		<div class = "mainLeaderContainer" id = "mainLeaderContainer">
+			<div class = "leaderContainer" id ="leaderContainer1">
+				<div class = "dummyDiv" id = "dummyDiv1"> 
+				</div>
+				<span id = "leaderSpan1">
+					<img src = "../../images/redprado.jpg"/>
+				</span>
+				<div class ="blueDiv" id ="blueDiv1">
+					<div class = "blueDivText" id ="blueDivText1">
+						Lea más acerca de mí
+					</div>
+				</div>
+				<div class = "leaderDiv" id = "leaderDiv1">
+					<div class = "p1" id = "name1">
+						Eduardo Prado Ruiz
+					</div>
+					<div class = "p2" id = "nameDesc1">
+						Co-fundador y Director Financiero
+						<!-- Ingeniero biomédico especializado en desarrollo para aplicaciones iOS, soluciones de código libre y codificación. -->
+					</div>
+				</div>
+			</div>
+
+			<div class = "leaderContainer" id ="leaderContainer2">
+				<div class = "dummyDiv" id = "dummyDiv2"> 
+				</div>
+				<span id = "leaderSpan2">
+					<img src = "../../images/eduardolav.jpg"/>
+				</span>
+				<div class ="blueDiv" id ="blueDiv2">
+					<div class = "blueDivText" id ="blueDivText2">
+						Lea más acerca de mí
+					</div>
+				</div>
+				<div class = "leaderDiv" id = "leaderDiv2">
+					<div class = "p1" id = "name2">
+						Eduardo López Arce Vivas
+					</div>
+					<div class = "p2" id = "nameDesc2">
+						Co-fundador y Director Ejecutivo
+						<!-- Ingeniero biomédico especializado en Electrónica y diseño de PCB, así como aplicaciones de sistemas embebidos, específicamente en procesamiento de señales y reconocimiento de patrones. -->
+					</div>
+				</div>
+			</div>
+			<div class = "leaderContainer" id ="leaderContainer3">
+				<div class = "dummyDiv" id = "dummyDiv3"> 
+				</div>
+				<span id = "leaderSpan3">
+					<img src = "../../images/adriangil.jpg"/>
+				</span>
+				<div class ="blueDiv" id ="blueDiv3">
+					<div class = "blueDivText" id ="blueDivText3">
+						Lea más acerca de mí
+					</div>
+				</div>
+				<div class = "leaderDiv" id = "leaderDiv3">
+					<div class = "p1" id = "name3">
+						Adrian Gil Castillejo
+					</div>
+					<div class = "p2" id = "nameDesc3">
+						Co-fundador y Director de Tecnología
+						<!-- Ingeniero en Mecatrónica especializado en diseño 3D y desarrollo de software con gran pasión por el diseño y la manufactura de dispositivos de ayuda humana. -->
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id = "arrowDiv"><div id="arrowUp"></div></div>
+		<div class = "leaderDesc" id = "leaderDesc1">
+			<div class = "p2" id = "textDesc1">
+				<br/>
+				Eduardo es Ingeniero Biomédico egresado del Instituto Tecnológico y de Estudios Superiores de Monterrey. Se ha interesado en soluciones de código libre y codificación desde una temprana edad. Este interés lo llevo a entrar en el ecosistema emprendedor. Comenzó como un desarrollador independiente para aplicaciones iOS y desarrollo web, especializándose en el área de la salud. A sus 17 años fundó Radiatta Productions para producción musical. En 2013 ganó el Startup Weekend en Guadalajara, México, con el projecto “TeRento.mx”, el cual es un mercado digital para la venta y compra de libros para estudiantes. Ese mismo año fundo GreenBox, compañía enfocada en el desarrollo de amplificadores acústicos de alta gama para dispositivos móviles.<br/><br/>
+				Actualmente es voluntario en la Cruz Roja Mexicana en la implementación de un Departamento de Ingeniería Biomédica y desarrollando esfigmomanómetros de bajo costo.
+				<br/><br/>
+			</div>
+		</div>
+		<div class = "leaderDesc" id = "leaderDesc2">
+			<div class = "p2" id = "textDesc2">
+				<br/>
+				Ingeniero biomédico especializado en Electrónica y diseño de PCB, así como aplicaciones de sistemas embebidos, específicamente en procesamiento de señales y reconocimiento de patrones. Reconocido mundialmente en estas áreas ingenieriles obteniendo hasta el momento dos publicaciones indexadas de la IEEE y una invitación para un capítulo en libro por la editorial Springer-Verlag, todas estas publicaciones como primer autor. Obtuvo el premio al mejor artículo de investigación en el área de interacción humano máquina en la conferencia internacional de la IEEE en Interacción Humano Sistema (2013 IEEE International Conference on Human System Interaction), debido a su investigación en interfaces cerebro-máquina.<br/><br/> 
+				Eduardo obtuvo el grado en Ingeniería Biomédica en el Instituto Tecnológico y de Estudios Superiores de Monterrey. Obtuvo el promedio más alto de su grado así como una Mención Honorífica de Excelencia debido a su alto desempeño. Ha trabajado en laboratorios de investigación en Alemania, España y México, desarrollando soluciones tecnológicas, especialmente en el área de Electrónica e Informática.
+				<br/><br/> 
+			</div>
+		</div>
+		<div class = "leaderDesc" id = "leaderDesc3">
+			<div class = "p2" id = "textDesc3">
+				<br/>
+				Ingeniero en Mecatrónica especializado en diseño 3D y desarrollo de software con gran pasión por el diseño y la manufactura de dispositivos de ayuda humana.<br/><br/>
+				Graduado con diploma de excelencia académica y mención honorífica en Informática y Computación del Centro de Enseñanza Técnica Industrial. Posteriormente estudió su segunda carrera como Ingeniero en Mecatrónica en el Instituto Tecnológico de Estudios Superiores de Monterrey. Siguiendo su pasión, hasta hoy Adrian diseñó una bicicleta de remo para rehabilitación de la mitad superior del cuerpo, ganó un concurso de Intel: "Diseño y fabricación de un lector óptico de texto con reproducción auditiva y Braille" y obtuvo un Diploma en diseño y desarrollo. En 2013 ganó una beca de MITACS, una organización canadiense para ir a trabajar a la Universidad de Calgary en un Laboratorio de Investigación -  NeuroLab  - en el diseño y desarrollo de un videojuego destinado a permitir a los médicos identificar correctamente a niños que se tengan alto riesgo de padecer DTD (Developmental Topographical Disorientation).
+				Adrian también es socio de una empresa de consultoría y desarrollo de software médico- administrativa" DGil Consultores" , y ha trabajado en laboratorios de investigación en Canadá y México.
+				<br/><br/>
+			</div>
+		</div>
+
+		<!--=======FOOTER=====-->			
+		<table class = "footer" id ="footerLeader" width ="100%">
+			<tr>
+				<!--=======ABOUT THE COMPANY=====-->
+				<td>
+					<div class = "title">NOSOTROS</div>
+						<p><a href="../about/contact.html">Contacto</a></p>
+						<p><a href="../about/motivation.html">Motivación</a></p>
+						<p><a href="../about/ethics.html">Código de Ética</a></p>
+						<p><a href="../about/leadership.html">Liderazgo</a></p>
+						<p><a href="../about/awards.html">Reconocimientos y Publicaciones</a></p>
+						<p><a href="../about/careers.html">Oportunidades</a></p>
+				</td><!--END ABOUT THE COMPANY-->
+				<!--=======SOLUTIONS=====-->
+				<td>
+					<div class = "title" style = "margin-top: -75px;">SOLUCIONES</div>
+						<p><a href="../muscle/">Prótesis</a></p>
+						<p><a href="../multimedia/">Multimedia</a></p>
+				</td><!--END SOLUTIONS-->
+				<!--=======SOCIAL MEDIA=====-->
+				<td>
+					<p>
+						<a class="facebook" href="https://www.facebook.com/spadia.eng" alt="Facebook" title="Facebook">
+							<img src="../../images/facebook.png"/>
+							<img src="../../images/facebook2.png" id ="facebook"/>
+						</a>
+						<a class="youtube" href="http://www.youtube.com/channel/UCso-N4HSArLndG_XXOiJcKg" alt="Youtube" title="Youtube">
+							<img src="../../images/youtube.png"/>
+							<img src="../../images/youtube2.png" id ="youtube"/>
+						</a>
+					</p>
+					<p>
+						<a class="linkedin" href="#" alt="LinkedIn" title="LinkedIn">
+							<img src="../../images/linkedin.png"/>
+							<img src="../../images/linkedin2.png" id = "linkedin"/>
+						</a>
+						<a class="twitter" href="https://twitter.com/spadiaEng" alt="Twitter" title="Twitter">
+							<img src="../../images/twitter.png"/>
+							<img src="../../images/twitter2.png" id ="twitter"/>
+						</a>
+					</p>
+				</td><!--END SOCIAL MEDIA-->
+			</tr>
+		<table><!--END FOOTER-->
+
+		<!--============SUBFOOTER===========-->
+		<table class = "subfooter" width ="100%">
+			<tr><td>Spadia Engineering, México. 2013.</td></tr>
+		</table><!--END SUBFOOTER-->
+
+		<script src="../../js/leadership.js"></script>
+		<script src="../../js/functions.js"></script>
+
+	</body>
+</html>

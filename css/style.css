@@ -27,10 +27,6 @@ a{
 	text-decoration: none;
 	outline:none;
 }
-textarea{
-	text-align: left;
-	float: left;
-}
 /**********Rules for div while image is loading***********/
 #hideAll{
    position: fixed;
@@ -66,18 +62,9 @@ textarea{
 	margin: auto;
 	padding: auto;
 }
-.logo #logo_text{
-	color: #bbb;
-	font-size: 35px;
-	display: inline-block;
-	position: absolute;
-	top: 11px;
-	font-family: 'Open Sans', sans-serif;
-}
 /* rules for logo IMAGE*/
 .logo img{
-	margin-right: 3px;
-	width: 45px;
+	width: 100%;
 }
 /********RULES FOR NAVIGATION MENU********/
 /* rules for all UNORDERED lists*/
@@ -97,7 +84,7 @@ ul#navmenu li{
 /* rules for MAIN ANCHOR element*/
 ul#navmenu a{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 16px;
+	font-size: 14px;
 	text-decoration: none;
 	display: block;
 	color: #ddd;/*#002F64;*/
@@ -109,7 +96,7 @@ ul#navmenu a{
 }
 /* rules for ALL ANCHOR element -> MAIN LI hover*/
 ul#navmenu li:hover >a{
-	color: #fff;
+	color: #00A8CB;
 }
 /* rules for SUB unordered lists*/
 ul#navmenu ul.sub1{
@@ -152,20 +139,17 @@ ul#navmenu .sub1 a{
 ul#navmenu li:hover .sub1{
 	display: block;
 }
-/**********RULES FOR PREORDER**********/
-/* rules for preorder button */
-.preorder{
-	color: #eee;
-	background-color: #00a8cb;
-	padding: 19px 0px;
-	float: right;
-	width: 100%;
+/**********RULES FOR FLAGS**********/
+#flags{
+	margin: auto;
+	padding-top: 10px;	
 }
-/* rules for preorder button on hover */
-.preorder:hover{
-	color: #eee;
-	background-color: #00b8db;
+#flags img{
+	margin: 0 2px;
 }
+#flags a span{
+	display:none;
+} 
 /***************Rules for main section********************/
 /*dummy div to add padding*/
 #paddingMenu{
@@ -186,8 +170,8 @@ ul#navmenu li:hover .sub1{
 	text-align: center;
 }
 .mainContainer #mainText1{
-	margin-left: 55%;	
-	width: 40%;
+	margin-left: 45%;	
+	width: 50%;
 }
 .mainContainer #mainText2{
 	text-align: left;
@@ -220,7 +204,7 @@ ul#navmenu li:hover .sub1{
 	font-size: 20px;
 	line-height: 200%;
 }
-.mainContainer #mainText1 .p2{
+.mainContainer #mainText1 .p2, #mainText3 .p2{
 	color: #ddd;
 }
 .mainContainer #sectionText1 .p2, #sectionText2 .p2, #sectionText3 .p2{
@@ -230,8 +214,8 @@ ul#navmenu li:hover .sub1{
 .mainContainer #logoHD{
 	position: absolute;
 	z-index: 1;
-	width: 30%;
-	margin-left: 60%;
+	width: 20%;
+	margin-left: 40%;
 }
 /*Main container with image as background*/
 .mainContainer .backgd{
@@ -262,8 +246,8 @@ ul#navmenu li:hover .sub1{
 	cursor: pointer;
 	background-color: transparent;
 	float: left;
-	margin-left: 33%;
-	width: 40%;
+	margin-left: 10%;
+	width: 54%;
 }
 /*Rules for second image to use on hover for specification subsection*/
 #backgdSpec{
@@ -390,15 +374,15 @@ input:checked + .slide-container .nav label {
 /*Rules for video container*/
 .mainVideo .videoContainer{
 	width:45%;
-	float: right;
-	margin-right: 2%;
+	float: left;
+	margin-left: 2%;
 }
 /*Rules for text in video container*/
 .mainVideo .videoText{
 	text-align: left;
-	width: 45%;
-	margin-left: 5%;
-	float: left;
+	width: 50%;
+	margin-right: 1%;
+	float:right;
 }
 .mainVideo .videoText .p1{
 	font-family: 'Open Sans', sans-serif;
@@ -576,14 +560,13 @@ input:checked + .slide-container .nav label {
 /****************RULES FOR SUBFOOTER************/
 .subfooter{
 	margin: 0px auto;
-	margin-top: -4px;
 	width: 100%;
-	text-align: center;
+	height: 50px;
+	text-align: right;
 	padding-bottom: 10px;
-	padding: 20px 0;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
-	background-color: rgb(3,3,3);
+	background-color: rgba(3,3,3,0.9);
 	color: #FFF;
 }
 /*************SOCIAL MEDIA***************/
@@ -719,7 +702,7 @@ input:checked + .slide-container .nav label {
 		position: absolute;
 		z-index: 1;
 		width: 126px;
-		margin-left: 400px;
+		margin-left: 252px;
 	}
 	/*Main container with image as background*/
 	.mainContainer .backgd{
